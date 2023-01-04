@@ -1,0 +1,9 @@
+.banner {
+    background-image: url(/images/top_img-product.jpg);
+}
+
+.content {
+    height: 1200px;
+    width: 100%;
+    background-color: #ffffff;
+}
