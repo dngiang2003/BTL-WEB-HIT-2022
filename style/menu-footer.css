@@ -25,7 +25,7 @@
 
 .banner_nav-logo {
     display: block;
-    background-image: url(/images/logo_mog.png);
+    background-image: url(./images/logo_mog.png);
     background-size: 90px;
     background-repeat: no-repeat;
     display: block;
@@ -184,7 +184,7 @@ nav #main-menu a {
     border-radius: 0 !important;
     font-size: 14px;
     color: #aaaaaa;
-    background: #fff url(/images/icon_mail.png) no-repeat;
+    background: #fff url(./images/icon_mail.png) no-repeat;
     background-size: 15px;
     background-position: 10px center;
     width: 80%;
@@ -239,7 +239,7 @@ nav #main-menu a {
 }
 
 .footer_logo {
-    background-image: url(/images/logo_mog.png);
+    background-image: url(./images/logo_mog.png);
     background-size: 60px;
     background-repeat: no-repeat;
     display: block;
@@ -304,7 +304,7 @@ nav #main-menu a {
     width: 40px;
     height: 40px;
     background-color: rgba(0, 0, 0, 0);
-    background-image: url(/images/arrows_up.png);
+    background-image: url(./images/arrows_up.png);
     background-size: 40px;
     border: none;
     opacity: .6;
