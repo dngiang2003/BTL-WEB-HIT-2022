@@ -7,9 +7,9 @@
     <link rel="icon" href="./images/icon.png">
     <link rel="stylesheet" href="./style/menu-footer.css">
     <link rel="stylesheet" href="./style/products.css">
-    <script src="./script/main.js"></script>
-    <script src="./script/products.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <title>Products | The official website of MOG Vietnam | MOG</title>
 </head>
 <body>
@@ -18,7 +18,7 @@
     <div class="banner">
         <div class="banner_nav">
             <a href="#" class="banner_nav-logo"></a>
-            <nav>
+            <nav class="nav-main">
                 <ul id="main-menu">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="aboutus.html">About Us</a></li>
@@ -29,8 +29,7 @@
                     <li><a href="contacts.html">Contacts</a></li>
                 </ul>
             </nav>
-            <!-- onclick="showMenu()" -->
-            <button id="btn-show" title="show menu">Menu</button> 
+            <button onclick="showMenu()" id="btn-show" title="show menu">Menu</button> 
         </div>
         <div class="banner_text">
             <h2>With MOG's products, a mobile can go beyond its possibility</h2>
@@ -39,8 +38,189 @@
     </div>
 
     <!-- code tiếp các mục tại đây -->
-    <div class="content"></div>
-
+    <div class="content-menu">
+        <ul class="nav">
+            <li class="page_menu" style="position: relative;">
+                <a style="color: #236fb6;">Menu</a>
+                <button onclick="showMenuC()"><ion-icon name="chevron-down-outline"></ion-icon></button>
+            </li>
+            <li class="page_scroll"><a href="#product-ads">Online Ads</a></li>
+            <li class="page_scroll"><a href="#product-pay">e-Payment & e-Wallet</a></li>
+            <li class="page_scroll"><a href="#product-mobile">Mobile Apps</a></li>
+            <li class="page_scroll"><a href="#product-retail">Connected Retail</a></li>
+            <li class="page_scroll"><a href="#product-game">Game Entertainment</a></li>
+        </ul>
+    </div>
+    <div class="block_wrap"></div>
+    <div class="content-2" id="product-ads">
+        <div class="content-img">
+            <a href="#">
+                <img src="images/img-online_ads.png" alt="">
+            </a>
+        </div>
+        <div class="content-main">
+            <a href="#">
+                <h3 class="content-title">Online Advertising</h3>
+                <p class="content-text">Owning many smart advertising platforms, we provide advertisers with effective marketing solutions that help reach millions of users, build brands and drive sales.</p>
+            </a>
+            <ul class="content-icon-list add">
+                <li>
+                    <a href="products-detail-accesstrade.html"><img src="images/logo_accesstrade.png" alt="">
+                        <p>Accesstrade</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="products-detail-admatic.html"><img src="images/logo_admatic.png" alt="">
+                        <p>Admatic</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="products-detail-mwork.html"><img src="images/logo-mwork.png" alt="">
+                        <p>mWork</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="content-big" style="background-color: #39b54a;">
+        <div class="content-3" id="product-pay">
+            <div class="content-main">
+                <a href="#">
+                    <h3 class="content-title" style="color: #ffffff;">e-Payment & e-Wallet</h3>
+                    <p class="content-text" style="color: #ffffff;">With a local presence in many countries, we deliver global payment processing solutions to individuals & merchants throughout Southeast Asia.</p>
+                </a>
+                <ul class="content-icon-list">
+                    <li>
+                        <a href="products-detail-yolo.html"><img src="images/logo_1pay.png" alt="">
+                            <p class="text-white" style="color: #ffffff;">1Pay</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="content-img">
+                <a href="#">
+                    <img src="images/img-e_Payment.png" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="content-big" style="background-color: #552fbd;">
+        <div class="content-4" id="product-mobile">
+            <div class="content-img">
+                <a href="#">
+                    <img src="images/img-mobile_ultilities.png" alt="">
+                </a>
+            </div>
+            <div class="content-main">
+                <a href="#">
+                    <h3 class="content-title" style="color: #ffffff;">Mobile Utilities</h3>
+                    <p class="content-text" style="color: #ffffff;">Focusing on users, we've developed many smart, innovative and localized mobile applications to bring the best experience.</p>
+                </a>
+                <ul class="content-icon-list">
+                    <li>
+                        <a href="products-detail-yolo.html"><img src="images/logo_yolo.png" alt="">
+                            <p class="text-white" style="color: #ffffff;">YOLO Family</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="content-big" style="background-color: #093c53;">
+        <div class="content-5" id="product-retail">
+            <div class="content-main">
+                <a href="#">
+                    <h3 class="content-title" style="color: #ffffff;">Connected Retail</h3>
+                    <p class="content-text" style="color: #ffffff;">We help SMEs connect to customers at the lowest price & the highest efficiency as well as delivering advanced & interactive shopping experience to customers.</p>
+                </a>
+                <ul class="content-icon-list">
+                    <li>
+                        <a href="products-detail-yolo.html"><img src="images/logo_posify.png" alt="">
+                            <p class="text-white" style="color: #ffffff;">Posify</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="products-detail-yolo.html"><img src="images/logo_gimi.png" alt="">
+                            <p class="text-white" style="color: #ffffff;">Gimi</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="content-img">
+                <a href="#">
+                    <img src="images/img-connected_retails.png" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="content-big" style="background-color: #f8f8f8;">
+        <div class="content-6" id="product-game">
+            <div class="content-img">
+                <a href="#">
+                    <img src="images/img-game_entertainment.png" alt="">
+                </a>
+            </div>
+            <div class="content-main">
+                <a href="#">
+                    <h3 class="content-title">Game Entertainment</h3>
+                    <p class="content-text">As one of Vietnam’s leading developers and publishers of gaming entertainment, we've developed many titles that reach millions of users throughout the world.</p>
+                </a>
+                <div class=" m-t-5">
+                    <a href="products-detail-game-entertainment.html" class="btn btn-job bk-tran">Read more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content-7">
+        <div class="content-title">
+            <div class="content-title-text" style="text-align: center;">Our Precious Clients</div>
+            <div class="content-title-line"></div>
+        </div>
+        <div class="content-7-slider">
+            <div class="box-image">
+                <div class="item"><img src="images/cheetah.png" alt=""></div>
+            </div>
+            <div class="box-image">
+                <div class="item"><img src="images/appsflyer-logo-241-150.png" alt=""></div>
+            </div>
+            <div class="box-image">
+                <div class="item"><img src="images/efun.png" alt=""></div>
+            </div>
+            <div class="box-image">
+                <div class="item"><img src="images/logo_viettel.png" alt=""></div>
+            </div>
+            <div class="box-image">
+                <div class="item"><img src="images/gumi.png" alt=""></div>
+            </div>
+            <div class="box-image">
+                <div class="item"><img src="images/google_logo.jpg" alt=""></div>
+            </div>
+            <div class="box-image">
+                <div class="item"><img src="images/logo_FPT.png" alt=""></div>
+            </div>
+            <div class="box-image">
+                <div class="item"><img src="images/vng.png" alt=""></div>
+            </div>
+            <div class="box-image">
+                <div class="item"><img src="images/logo_vinaphone.png" alt=""></div>
+            </div>
+            <div class="box-image">
+                <div class="item"><img src="images/logo_face.jpg" alt=""></div>
+            </div>
+            <div class="box-image">
+                <div class="item"><img src="images/logo_ME.png" alt=""></div>
+            </div>
+            <div class="box-image">
+                <div class="item"><img src="images/logo_mobifone.png" alt=""></div>
+            </div>
+            <div class="box-image">
+                <div class="item"><img src="images/logo_movistar.png" alt=""></div>
+            </div>
+            <div class="box-image">
+                <div class="item"><img src="images/logo_VCCorp.png" alt=""></div>
+            </div>
+        </div>
+    </div>
     <!-- footer cuối cùng -->
     <div class="footer">
         <div class="footer_top">
@@ -51,7 +231,7 @@
                         <ul class="clearfix">
                             <li><a href="#">Home</a></li>
                             <li><a href="aboutus.html">About Us</a></li>
-                            <li><a href="products.html" id="active" style="opacity: 1;">Products</a></li>
+                            <li><a href="products.html">Products</a></li>
                             <li><a href="news.html">News</a></li>
                             <li><a href="resources.html">Resources</a></li>
                             <li><a href="#">Privacy Policy</a></li>
@@ -99,7 +279,7 @@
                 <div class="footer_bottom-wrap-left">
                     <a class="footer_logo" href="#"></a>
                 </div>
-                <div class="footer_bottom-wrap-right" style="max-width: 94.891px;">
+                <div class="footer_bottom-wrap-right" style="max-width: 94.891px; float: right;">
                     <button onclick="changeLan()" class="btn-langue" type="button">
                         <div style="display: flex;">
                             <div><img class="lan_sel" src="./images/Eng.png" alt=""></div>
@@ -116,13 +296,10 @@
             </div>
         </div>
     </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./script/main.js"></script>
+    <script src="script/products.js"></script>
 </body>
-<script>
-    // menu
-    $(document).ready(function() {
-        $('#btn-show').click(function() {
-            $('nav').slideToggle();
-        });
-    });
-</script>
 </html>

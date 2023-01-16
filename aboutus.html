@@ -7,9 +7,11 @@
     <link rel="icon" href="./images/icon.png">
     <link rel="stylesheet" href="./style/menu-footer.css">
     <link rel="stylesheet" href="./style/aboutus.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <script src="script/main.js"></script>
     <script src="script/aboutus.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <title>About Us | The official website of MOG Vietnam | MOG</title>
 </head>
 <body>
@@ -18,7 +20,7 @@
     <div class="banner">
         <div class="banner_nav">
             <a href="#" class="banner_nav-logo"></a>
-            <nav>
+            <nav class="nav-main">
                 <ul id="main-menu">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="aboutus.html" id="active" style="opacity: 1;">About Us</a></li>
@@ -29,8 +31,7 @@
                     <li><a href="contacts.html">Contacts</a></li>
                 </ul>
             </nav>
-            <!-- onclick="showMenu()" -->
-            <button id="btn-show" title="show menu">Menu</button> 
+            <button onclick="showMenu()" id="btn-show" title="show menu">Menu</button> 
         </div>
         <div class="banner_text">
             <h2>Aspiring to be South East Asia's Leading</h2>
@@ -39,8 +40,229 @@
     </div>
 
     <!-- code tiếp các mục tại đây -->
-    <div class="content"></div>
-
+    <div class="content-menu">
+        <ul class="nav">
+            <li class="page_menu" style="position: relative;">
+                <a style="color: #236fb6;">Menu</a>
+                <button onclick="showMenuC()"><ion-icon name="chevron-down-outline"></ion-icon></button>
+            </li>
+            <li class="page_scroll"><a href="#about-info">Company Info</a></li>
+            <li class="page_scroll"><a href="#about-press">Press</a></li>
+            <li class="page_scroll"><a href="#about-time">Timeline</a></li>
+        </ul>
+    </div>
+    <div class="block_wrap"></div>
+    <div class="content-2" id="about-info">
+        <div class="content-title">
+            <div class="content-title-text">Company Info</div>
+            <div class="content-title-line"></div>
+        </div>
+        <div class="content-main-2">
+            <h4 class="content-main-2-title">Background</h4>
+            <p>In 2011, mWork was established to provide an affiliate platform that allowed app/digital-content developers and publishers to rapidly distribute to an enormous number of users. Coming at just right time, mWork grew very fast and became a very successful platform.
+            </p>
+            <p>
+                Four years later, in August 2015, to create a broader awareness and effective brand recall, mWork changed its name to MOG and stretched its legs to other verticals of the Internet industry. The new brand name and logo reflected the company's new position as an Internet company that provides online products and services to mobile users. MOG focuses on five verticals: Online Advertising, e-Payment &amp; e-Wallet, Mobile utilities, Connected Retail and Game Entertainment.</p>
+            <br>
+            <h4 class="content-main-2-title">Mission</h4>
+            <p>Our enduring mission as a mobile internet company focuses on building an eco-system to enhance the user’s mobile life.</p>
+        </div>
+    </div>
+    <div class="block_wrap" id="about-press"></div>
+    <div class="content-3">
+        <div class="content-title">
+            <div class="content-title-text">Press</div>
+            <div class="content-title-line"></div>
+        </div>
+        <div class="content-main-3">
+            <div class="box-3-item">
+                <div class="box-3-item-image">
+                    <img src="./images/asia.png" alt="">
+                </div>
+                <div class="box-3-item-content">
+                    <h5><a href="http://www.dealstreetasia.com/stories/mobile-internet-in-vietnam-has-space-to-invest-in-mog-ceo-tran-anh-dung-15213/">Right time to start up, invest in mobile Internet in Vietnam: MOG CEO Tran Anh Dung</a></h5>
+                    <p>"October 13, 2015: Established in 2011 as a digital content-focused startup, mWork morphed into MOG in August 2015 to stretch its legs to other verticals of the Internet industry in its bid to reposition itself as a mobile and internet player."
+                        <a href="http://www.dealstreetasia.com/stories/mobile-internet-in-vietnam-has-space-to-invest-in-mog-ceo-tran-anh-dung-15213/"> Read more</a>
+                    </p>
+                </div>
+            </div>
+            <div class="box-3-item">
+                <div class="box-3-item-image">
+                    <img src="./images/logo_cb.png" alt="">
+                </div>
+                <div class="box-3-item-content">
+                    <h5><a href="http://www.mybiz.ru/articles/razvitie-cherez-kompleksnyj-podxod/">Развитие через комплексный подход</a></h5>
+                    <p>""Эта статья создана нашим корреспондентом Андреем Скрипкиным в рамках авторского проекта “Вокруг света в поисках предпринимательской мудрости”. "
+                        <a href="https://mybiz.ru/articles/razvitie-cherez-kompleksnyj-podxod/"> Read more</a>
+                    </p>
+                </div>
+            </div>
+            <div class="box-3-item">
+                <div class="box-3-item-image">
+                    <img src="./images/2.jpg" alt="">
+                </div>
+                <div class="box-3-item-content">
+                    <h5><a href="https://www.thefastmode.com/technology-solutions/6121-e-payment-startup-1pay-partners-fortumo-for-direct-carrier-billing-in-south-east-asia">e-Payment Startup 1Pay Partners Fortumo for Direct Carrier Billing in South East Asia</a></h5>
+                    <p>"1Pay, a startup in Vietnam that provides an open platform for e-payments has partnered with the mobile payments company Fortumo for direct carrier billing in South-East Asia."
+                        <a href="https://www.thefastmode.com/technology-solutions/6121-e-payment-startup-1pay-partners-fortumo-for-direct-carrier-billing-in-south-east-asia"> Read more</a>
+                    </p>
+                </div>
+            </div>
+            <div class="box-3-item">
+                <div class="box-3-item-image">
+                    <img src="./images/vneconomy.jpg" alt="">
+                </div>
+                <div class="box-3-item-content">
+                    <h5><a href="https://vneconomy.vn/trinh-duyet-di-dong-viet-tuyen-bo-chan-duoc-ma-doc.htm">Trình duyệt di động Việt tuyên bố chặn được mã độc</a></h5>
+                    <p>"Công ty Cổ phần MOG - đơn vị sở hữu trình duyệt di động YOLO mini - vừa phát đi thông báo trình duyệt di động này đã có khả năng chặn trừ tiền ngầm khi truy cập vào một số trang web "
+                        <a href="https://vneconomy.vn/trinh-duyet-di-dong-viet-tuyen-bo-chan-duoc-ma-doc.htm"> Read more</a>
+                    </p>
+                </div>
+            </div>
+            <div class="box-3-item">
+                <div class="box-3-item-image">
+                    <img src="./images/footlogo@2x.png" alt="">
+                </div>
+                <div class="box-3-item-content">
+                    <h5><a href="https://www.brandsvietnam.com/congdong/topic/1659-Ong-lon-Cheetah-Mobile-ky-vong-sanh-ngang-Facebook-va-Google-tai-Viet-Nam">Ông “lớn” Cheetah Mobile kỳ vọng sánh ngang Facebook và Google tại Việt Nam</a></h5>
+                    <p>"Công ty công nghệ Cheetah Mobile vừa chính thức tuyên bố tham gia thị trường quảng cáo di động Việt Nam bằng việc ký hợp đồng hợp tác với đơn vị cung cấp quảng cáo trực tuyến Admatic"
+                        <a href="https://www.brandsvietnam.com/congdong/topic/1659-Ong-lon-Cheetah-Mobile-ky-vong-sanh-ngang-Facebook-va-Google-tai-Viet-Nam"> Read more</a>
+                    </p>
+                </div>
+            </div>
+            <div class="box-3-item">
+                <div class="box-3-item-image">
+                    <img src="./images/logo-cafe.png" alt="">
+                </div>
+                <div class="box-3-item-content">
+                    <h5><a href="https://cafebiz.vn/nhan-vat/tong-giam-doc-mog-viet-nam-la-chi-huy-du-sai-toi-cung-khong-nhan-loi-20151012154134298.chn">Tổng giám đốc MOG Việt Nam: “Là chỉ huy, dù sai tôi cũng không nhận lỗi”</a></h5>
+                    <p>"“Là chỉ huy, không phải việc gì mình sai cũng nên nhận lỗi trước mặt mọi người. Quan trọng là mình phải nhận ra vấn đề của bản thân và chỉnh sửa nó ngay tức khắc”, Trần Anh Dũng, tổng giám đốc MOG Việt Nam chia sẻ."
+                        <a href="https://cafebiz.vn/nhan-vat/tong-giam-doc-mog-viet-nam-la-chi-huy-du-sai-toi-cung-khong-nhan-loi-20151012154134298.chn"> Read more</a>
+                    </p>
+                </div>
+            </div>
+            <div class="box-3-item">
+                <div class="box-3-item-image">
+                    <img src="./images/logo-dn.png" alt="">
+                </div>
+                <div class="box-3-item-content">
+                    <h5><a href="http://www.doanhnhansaigon.vn/khoi-nghiep/tong-giam-doc-mog-viet-nam-khoi-nghiep-lan-thu-n/1092456/">Tổng giám đốc MOG Việt Nam: Khởi nghiệp lần thứ... n</a></h5>
+                    <p>"Thất bại nhiều lần nhưng chính thất bại lại mang đến cho Trần Anh Dũng, Tổng giám đốc MOG Việt Nam, những cơ hội để anh có thể bắt đầu lại và mở đường cho thành công đến với mình."
+                        <a href="http://www.doanhnhansaigon.vn/khoi-nghiep/tong-giam-doc-mog-viet-nam-khoi-nghiep-lan-thu-n/1092456/"> Read more</a>
+                    </p>
+                </div>
+            </div>
+            <div class="box-3-item">
+                <div class="box-3-item-image">
+                    <img src="./images/logo-ict.png" alt="">
+                </div>
+                <div class="box-3-item-content">
+                    <h5><a href="https://ictnews.vietnamnet.vn/khoi-nghiep/ceo-mwork-luc-ban-on-dinh-va-cam-thay-an-toan-la-luc-kho-khan-nhat-118410.ict">CEO mWork: Lúc bạn ổn định và cảm thấy an toàn là lúc khó khăn nhất</a></h5>
+                    <p>"Nếu nói về nhân vật có tầm ảnh hưởng mạnh trong cộng động khởi nghiệp mobile Việt Nam, hẳn nhiều người sẽ biết Trần Anh Dũng, CEO của mWork, một startup chuyên về phân phối và thanh toán nội dung số."
+                        <a href="https://ictnews.vietnamnet.vn/khoi-nghiep/ceo-mwork-luc-ban-on-dinh-va-cam-thay-an-toan-la-luc-kho-khan-nhat-118410.ict"> Read more</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="block_wrap"></div>
+    <div class="content-4" id="about-time">
+        <div class="content-title">
+            <div class="content-title-text">Timeline</div>
+            <div class="content-title-line"></div>
+        </div>
+        <div class="content-main-4">
+            <div class="block_content">
+                <article class="timeline" style="position: relative;">
+                    <div>
+                        <section class="year">
+                            <h3>2011</h3>
+                            <section>
+                                <ul>
+                                    <li>mWork Established</li>
+                                </ul>
+                                <h4>January</h4>
+                            </section>
+                        </section>
+                        <section class="year">
+                            <h3>2012</h3>
+                            <section>
+                                <ul>
+                                    <li>mWork.vn Launched</li>
+                                </ul>
+                                <h4>January</h4>
+                            </section>
+                        </section>
+                        <section class="year">
+                            <h3>2013</h3>
+                            <section>
+                                <ul>
+                                    <li>1Pay Established</li>
+                                </ul>
+                                <h4>January</h4>
+                            </section>
+                            <section class="year">
+                                <ul>
+                                    <li>Game Entertainment Established</li>
+                                </ul>
+                                <h4>April</h4>
+                            </section>
+                        </section>
+                        <section class="year">
+                            <h3>2014</h3>
+                            <section>
+                                <ul>
+                                    <li>Appsync Mobile Assistant Launched</li>
+                                </ul>
+                                <h4>June</h4>
+                            </section>
+                            <section class="year">
+                                <ul>
+                                    <li>Appboost Promotion Platform Launched</li>
+                                </ul>
+                                <h4>July</h4>
+                            </section>
+                        </section>
+                        <section class="year">
+                            <h3>2015</h3>
+                            <section>
+                                <ul>
+                                    <li>Interspace Vietnam Co., Ltd Established</li>
+                                </ul>
+                                <h4>May</h4>
+                            </section>
+                            <section class="year">
+                                <ul>
+                                    <li>Affiliate Platform Acesstrade Launched</li>
+                                </ul>
+                                <h4>May</h4>
+                            </section>
+                            <section class="year">
+                                <ul>
+                                    <li>mWork Renamed to MOG</li>
+                                </ul>
+                                <h4>August</h4>
+                            </section>
+                            <section class="year">
+                                <ul>
+                                    <li>Yolo Family Launched</li>
+                                </ul>
+                                <h4>August</h4>
+                            </section>
+                            <section class="year">
+                                <ul>
+                                    <li>Admatic Launched</li>
+                                </ul>
+                                <h4>August</h4>
+                            </section>
+                        </section>
+                        <div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
     <!-- footer cuối cùng -->
     <div class="footer">
         <div class="footer_top">
@@ -116,13 +338,18 @@
             </div>
         </div>
     </div>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="script/aboutus.js"></script>
 </body>
-<script>
-    // menu
-    $(document).ready(function() {
-        $('#btn-show').click(function() {
-            $('nav').slideToggle();
-        });
-    });
-</script>
 </html>

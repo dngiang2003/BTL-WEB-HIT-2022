@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="./style/contacts.css">
     <script src="./script/main.js"></script>
     <script src="./script/contacts.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
     <title>Contact Us | The official website of MOG Vietnam | MOG</title>
 </head>
 <body>
@@ -18,7 +17,7 @@
     <div class="banner">
         <div class="banner_nav">
             <a href="#" class="banner_nav-logo"></a>
-            <nav>
+            <nav class="nav-main">
                 <ul id="main-menu">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="aboutus.html">About Us</a></li>
@@ -29,8 +28,7 @@
                     <li><a href="contacts.html" id="active" style="opacity: 1;">Contacts</a></li>
                 </ul>
             </nav>
-            <!-- onclick="showMenu()" -->
-            <button id="btn-show" title="show menu">Menu</button> 
+            <button onclick="showMenu()" id="btn-show" title="show menu">Menu</button>  
         </div>
         <div class="banner_text">
             <h2>Contacts: Need Support? Get It!</h2>
@@ -117,12 +115,4 @@
         </div>
     </div>
 </body>
-<script>
-    // menu
-    $(document).ready(function() {
-        $('#btn-show').click(function() {
-            $('nav').slideToggle();
-        });
-    });
-</script>
 </html>

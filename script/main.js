@@ -9,16 +9,11 @@ function changeLan() {
     }
 }
 
-// var checkMenu = true;
-// function showMenu() {
-//     if (checkMenu) {
-//         document.getElementById("main-menu").style.display = "none";
-//         checkMenu = false;
-//     } else {
-//         document.getElementById("main-menu").style.display = "block";
-//         checkMenu = true;
-//     }
-// }
+function showMenu() {
+    var x = document.getElementsByClassName('nav-main');
+    for (let i = 0; i < x.length; i++)
+      x[i].classList.toggle('show');
+}
 
 function goToTop() {
     document.body.scrollIntoView({
@@ -32,7 +27,7 @@ window.onscroll = function() {
     } else {
         document.querySelector(".banner_nav").classList.remove("fixed");
     }
-    if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+    if (document.documentElement.scrollTop > 400) {
         document.getElementById("btn-top").style.display = "block";
     } else {
     document.getElementById("btn-top").style.display = "none";
