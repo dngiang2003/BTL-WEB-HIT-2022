@@ -185,6 +185,7 @@ article.timeline section.year section h4 {
     font-weight: 400;
     color: rgba(74, 74, 74, .8);
 }
+
 article.timeline section.year section ul {
     list-style-type: none;
     padding-left: 140px;
@@ -193,6 +194,7 @@ article.timeline section.year section ul {
     line-height: 24px;
     color: rgba(74, 74, 74, 1);
 }
+
 article.timeline section.year section ul:last-child {
     margin-bottom: 0;
 }
@@ -200,6 +202,7 @@ article.timeline section.year section ul:last-child {
 ul {
     list-style: none;
 }
+
 article.timeline div:after {
     content: '';
     width: 2px;
@@ -233,7 +236,6 @@ article.timeline section.year section ul:first-of-type:after {
         padding: 0px 20px;
     }
 }
-
 
 @media (max-width: 768px) {
     .content-2, .content-3, 

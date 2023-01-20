@@ -103,6 +103,7 @@ a {
     grid-template-columns: 50% 50%;
     padding: 0px 50px;
 }
+
 .key_tittle {
     font-size: 14px;
     opacity: .7;
@@ -111,6 +112,7 @@ a {
     line-height: 20px;
     text-transform: uppercase; 
 }
+
 .key_number {
     color: #4a4a4a;
     font-size: 30px;
