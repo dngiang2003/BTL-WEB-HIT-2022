@@ -19,6 +19,10 @@
     display: flex;
 }
 
+.content-menu .nav ion-icon {
+    color: rgb(0, 0, 0);
+}
+
 a {
     text-decoration: none;
     color: #4a4a4a;
@@ -81,7 +85,7 @@ a {
 p.content-text {
     opacity: .8;
     font-weight: 400;
-    width: 90%;
+    width: 100%;
     margin-bottom: 15px;
 }
 .content-icon-list li {

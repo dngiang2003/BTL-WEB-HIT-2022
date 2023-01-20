@@ -2,7 +2,7 @@ $(document).ready(function () {
   $(".content-main-3").slick({
     slidesToShow: 2,
     slidesToScroll: 1,
-    infinite: false,
+    infinite: true,
     arrows: false,
     draggable: true,
     dots: true,
@@ -12,12 +12,12 @@ $(document).ready(function () {
         settings: {
           slidesToShow: 1,
           arrows: false,
-          infinite: false,
+          infinite: true,
         },
       },
     ],
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 2000,
   });
 });
 

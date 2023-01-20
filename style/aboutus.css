@@ -1,5 +1,5 @@
 .banner {
-    background-image: url('../images/top_image_7.jpg');
+    background-image: url('../images/top_images_jobs.jpg');
 }
 
 .nav {
@@ -103,6 +103,7 @@ a {
 }
 
 
+
 .box-3-item-image img {
     width: 25px;
     margin-top: 3px;
@@ -160,6 +161,9 @@ a {
     background-color: #838383;
 }
 
+.content-main-4 {
+    padding: 0px 20px;
+}
 
 article.timeline section.year {
     position: relative;
@@ -226,6 +230,7 @@ article.timeline section.year section ul:first-of-type:after {
     }
     .content-menu {
         width: 100%;
+        padding: 0px 20px;
     }
 }
 
@@ -245,6 +250,7 @@ article.timeline section.year section ul:first-of-type:after {
         width: 100%;
         height: 100%;
         z-index: 10;
+        padding: 0px;
     }
     .content-menu .nav {
         display: block;
