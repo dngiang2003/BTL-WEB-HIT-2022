@@ -77,13 +77,6 @@ a {
 .box-text {
     color: #4a4a4a;
     opacity: .8;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    position: relative;
-    text-overflow: ellipsis;
-    white-space: normal;
-    word-wrap: break-word;
 }
 
 .content-main-1-box:hover {
@@ -179,8 +172,11 @@ a {
         width: 100%;
         padding: 10px 20px 100px 20px;
     }
-    .content-main-1, .content-main-3 {
+    .content-main-1, .content-main-2, .content-main-3 {
         grid-template-columns: 100%;
+    }
+    .content-main-2 {
+        padding: 0px;
     }
     .box-text.text-line-4 {
         width: 100%;

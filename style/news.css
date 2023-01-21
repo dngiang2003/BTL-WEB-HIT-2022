@@ -78,13 +78,14 @@ body {
     color: rgb(30, 30, 165);
     opacity: 1;
 }
-.down img {
-    width: 15px;
-    height: 15px;
-    color: black;
-    background-color: #fff;
-    margin-top: 10px;
-    display: none;
+.down ion-icon {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    cursor: pointer;
 }
 
 .linethrough {

@@ -113,9 +113,10 @@ textarea.form-control {
     color: #4a4a4a;
 }
 
-.content-main-2-map .map-content .icon-map {
-    font-size: 19px;
+.content-main-2-map .map-content i {
+    font-size: 16px;
     margin-right: 5px;
+    opacity: 0.8;
 } 
 
 .content-main-2-map {
