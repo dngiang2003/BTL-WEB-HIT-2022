@@ -1,24 +1,27 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../images/icon.png">
     <link rel="stylesheet" href="../style/menu-footer.css">
-    <link rel="stylesheet" href= "../style/recources.css">
+    <link rel="stylesheet" href="../style/recources.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="../script/main.js"></script>
     <script src="../script/recources.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
-    <title>Thư viện | Trang web chính thức của MOG Việt Nam | MOG</title>
+    <title>Resources | The official website of MOG Vietnam | MOG</title>
+
 </head>
 <body>
-    <!-- menu đầu tiên -->
+    <div>
+    <!-- Menu -->
     <button onclick="goToTop()" id="btn-top" title="Go to top"></button>
     <div class="banner">
         <div class="banner_nav">
             <a href="#" class="banner_nav-logo"></a>
-            <nav>
+            <nav class="nav-main">
                 <ul id="main-menu">
                     <li><a href="index.html">Trang chủ</a></li>
                     <li><a href="aboutus.html">Giới thiệu</a></li>
@@ -29,100 +32,268 @@
                     <li><a href="contacts.html">Liên hệ</a></li>
                 </ul>
             </nav>
-            <!-- onclick="showMenu()" -->
-            <button id="btn-show" title="show menu">Menu</button> 
+            <button onclick="showMenu()" id="btn-show" title="show menu">Menu</button> 
         </div>
         <div class="banner_text">
             <h2>Kho thư viện về MOG nằm ngay trong tầm tay của bạn</h2>
         </div>
         <div class="colored-line"></div>
     </div>
-
-    <!-- code tiếp các mục tại đây -->
-    <div class="content"></div>
-
-    <!-- footer cuối cùng -->
-    <div class="footer">
-        <div class="footer_top">
-            <div class="row">
-                <div class="row_left">
-                    <div class="footer_link">
-                        <div class="footer_tittle">Liên kết nhanh</div>
-                        <ul class="clearfix">
-                            <li><a href="#">Trang chủ</a></li>
-                            <li><a href="aboutus.html">Giới thiệu</a></li>
-                            <li><a href="products.html">Sản phẩm</a></li>
-                            <li><a href="news.html">Tin tức</a></li>
-                            <li><a href="resources.html">Thư viện</a></li>
-                            <li><a href="#">Chính sách bảo mật</a></li>
-                            <li><a href="contactus.html">Liên hệ</a></li>
-                            <li><a href="careers.html">Tuyển dụng</a></li>
-                            <li><a href="#">Điều khoản dịch vụ</a></li>
-                            <li><a>Mạng xã hội:</a></li>
-                            <li>
-                                <a href="https://www.facebook.com/mogvietnam">
-                                    <img class="logo-fb" src="../images/icon_face.png">
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="footer_link">
-                        <div class="footer_tittle">Nhận bản tin</div>
-                        <div class="form-group">
-                            <div class="input-email">
-                                <input type="email" class="input-text" placeholder="Nhập email của bạn">
-                            </div>
-                            <div class="btn-email">
-                                <button type="submit" class="btn btn-sub">Nhận</button>
-                            </div>
+    
+    <!-- Screen & Photos -->
+    <div class="content">
+        <div class="resource-container">
+            <div class="photo">
+                <h1>Hình ảnh</h1>
+                <div class="linethrough-small"></div>
+                <div class="photo-main">
+                    <span>Cái nhìn về MOG thông qua những bức hình được chúng tôi chọn lọc.</span>
+                    <div class="photo-child">
+                        <div class="photo-child-1">
+                            <img src="../images/img_spaces_1.png">
+                            <p>Hội trại lãnh đạo 2016</p>
+                        </div>
+                        <div class="photo-child-1">
+                            <img src="../images/img_spaces_2.png">
+                            <p>Giải vô địch cup MOG 2015</p>
+                        </div>
+                        <div class="photo-child-1">
+                            <img src="../images/img_spaces_3.png">
+                            <p>Đêm tiệc Night of Queen 2016</p>
+                        </div>
+                        <div class="photo-child-1">
+                            <img src="../images/img_spaces_4.png">
+                            <p>Quốc tế Phụ nữ 8/3 2016</p>
+                        </div>
+                        <div class="photo-child-1">
+                            <img src="../images/img_spaces_5.png">
+                            <p>Cuộc thi trang trí giáng sinh 2015</p>
+                        </div>
+                        <div class="photo-child-1">
+                            <img src="../images/img_spaces_6.png">
+                            <p>Chuyến đi từ thiện về Ba Vì 2015</p>
+                        </div>
+                        <div class="photo-child-1">
+                            <img src="../images/img_spaces_7.png">
+                            <p>Ra mắt MOG Daily</p>
+                        </div>
+                        <div class="photo-child-1">
+                            <img src="../images/img_spaces_8.png">
+                            <p>Tiệc tổng kết năm 2015</p>
                         </div>
                     </div>
-                </div>
-                <div class="row_right">
-                    <div class="footer_tittle">Liên hệ</div>
-                    <p style="color: rgba(255, 255, 255, 0.432)"><br>
-                        <span style="color: rgb(228, 228, 228);font-weight: 600;">Trụ sở chính</span><br>
-                        A: mTower – Số 4, Ngõ 151B, Yên Lãng,
-                        phường Láng Hạ, quận Đống Đa, Hà Nội<br>
-                        T: (+84) 4 3640 6627<br>
-                        E: info@mog.net<br>
-                        <br>
-                        <span style="color: rgb(228, 228, 228);font-weight: 600;">Chi nhánh HCM</span><br>
-                        A: 927/1 đường CMT8, phường 7, quận Tân Bình, Hồ Chí Minh<br>
-                        T: (+84) 8 39700380 - (+84) 8 39700377
-                    </p>
+                    <div class="button"><a href="">Xem thêm</a></div>
                 </div>
             </div>
-        </div>
-        <div class="footer_bottom" style="border-top: 1px solid #393939;">
-            <div class="footer_bottom-wrap" style="max-height: 65px;">
-                <div class="footer_bottom-wrap-left">
-                    <a class="footer_logo" href="#"></a>
-                </div>
-                <div class="footer_bottom-wrap-right" style="max-width: 108.86px;">
-                    <button onclick="changeLan()" class="btn-langue" type="button">
-                        <div style="display: flex;">
-                            <div><img class="lan_sel" src="../images/vn.png" alt=""></div>
-                            <div style="margin-left: 6px;">Việt Nam<span class="caret"></span></div>
+            <div class="linethrough"></div>
+            <div class="video">
+                <h1>Video</h1>
+                <div class="linethrough-small"></div>
+                <div class="video-main">
+                    <span>Bộ sưu tập các video clip về MOG hoặc được làm bởi MOG</span>
+                    <div class="video-child">
+                        <div class="video-child-1 video1">
+                            <a href="https://www.youtube.com/watch?v=8u2kZAf3Hu8&feature=youtu.be" target="_blank">
+                                <img src="../images/video1.jpg">
+                                <p>VTV2: Yolo Browser</p>
+                            </a>
+                            <i class="fa-brands fa-youtube"></i>
                         </div>
-                    </button>
-                    <div class="popup_langue" id="popup_langue" style="width: 145px;">
-                        <div style="display: flex;">
-                            <img style="width: 27px; margin-top: 3px;" src="../images/Eng.png" alt="">
-                            <a href="../index.html">English</a>
-                        </div>       
+                        
+                        <div class="video-child-1">
+                            <a href="https://www.youtube.com/watch?v=RYvi-nrQ4uI" target="_blank">
+                                <img src="../images/video2.jpg">
+                                <p>VTV1: 1Pay a successful startup</p>
+                            </a>
+                            <i class="fa-brands fa-youtube"></i>
+                        </div>
+                        
+                        <div class="video-child-1">
+                            <a href="https://www.youtube.com/watch?v=EstPs_fdmkYhttps://www.youtube.com/watch?v=EstPs_fdmkY" target="_blank">
+                                <img src="../images/video3.jpg">
+                                <p>VTV1: 1Pay: How to startup a business</p>
+                            </a>
+                            <i class="fa-brands fa-youtube"></i>
+                        </div>
+                       
+                        
+                        <div class="video-child-1">
+                            <a href="https://www.youtube.com/watch?v=pUfpNCQjLjI" target="_blank">
+                                <img src="../images/video4.jpg">
+                                <p>VTC1: Interview CEO of MOG</p>
+                            </a>
+                            <i class="fa-brands fa-youtube"></i>
+                        </div>
+
+                        <div class="video-child-1">
+                            <a href="https://www.youtube.com/watch?v=Dt-I5bgV_Cw" target="_blank">
+                                <img src="../images/video5.jpg">
+                                <p>Night of Queens Party</p>
+                            </a>
+                            <i class="fa-brands fa-youtube"></i>
+                        </div>
+                        
+                        <div class="video-child-1">
+                            <a href="https://www.youtube.com/watch?v=PyiHUpCqdgM" target="_blank">
+                                <img src="../images/video6.jpg">
+                                <p>Yolo Browser's review</p>
+                            </a>
+                            <i class="fa-brands fa-youtube"></i>
+                        </div>
                     </div>
                 </div>
+                <div class="button"><a href="">Xem thêm</a></div>
+            </div>
+            <div class="linethrough"></div>
+            <div class="brand">
+                <h1>Thương hiệu của chúng tôi</h1>
+                <div class="linethrough-small"></div>
+                <div class="brand-main">
+                    <h2>Logo của chúng tôi</h2>
+                    <span>Dưới đây là các mẫu logo chính thức của MOG. Có hai phiên bản để đảm bảo logo của chúng tôi luôn dễ nhìn trên các thiết kế khác nhau.</span>
+                    <div class="brand-child">
+                        <div class="brand-child-1">
+                            <img src="../images/logo_mog1.png">
+                            <h3>Logo</h3>
+                            <span>Đây là logo chính thức. Thiết kế này cần phải được sử dụng bất cứ khi nào có thể.</span>
+                        </div>
+                        <div class="brand-child-2">
+                            <img src="../images/logo_mog_white.png">
+                            <h3>Logo âm bản</h3>
+                            <span>Phiên bản logo này với phần chữ màu trắng phù hợp với các thiết kế có nền màu tối.</span>
+                        </div>                        
+                    </div>
+                </div>
+                <div class="button"><a href="">Xem thêm</a></div>
             </div>
         </div>
     </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="footer_top">
+            <div class="footer_top-left">
+                <div class="footer_link">
+                    <div class="footer_tittle">Liên kết nhanh</div>
+                    <ul class="clearfix">
+                        <li><a href="#">Trang chủ</a></li>
+                        <li><a href="aboutus.html">Giới thiệu</a></li>
+                        <li><a href="products.html">Sản phẩm</a></li>
+                        <li><a href="news.html">Tin tức</a></li>
+                        <li><a href="resources.html">Thư viện</a></li>
+                        <li><a href="#">Chính sách bảo mật</a></li>
+                        <li><a href="contactus.html">Liên hệ</a></li>
+                        <li><a href="careers.html">Tuyển dụng</a></li>
+                        <li><a href="#">Điều khoản dịch vụ</a></li>
+                        <li><a>Mạng xã hội:</a></li>
+                        <li>
+                            <a href="https://www.facebook.com/mogvietnam">
+                                <img class="logo-fb" src="../images/icon_face.png">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer_link">
+                    <div class="footer_tittle">Nhận bản tin</div>
+                    <div class="form-group">
+                        <div class="input-email">
+                            <input type="email" class="input-text" placeholder="Enter your email address">
+                        </div>
+                        <div class="btn-email">
+                            <button type="submit" class="btn btn-sub">Nhận</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_top-right">
+                <div class="footer_tittle">Liên hệ</div>
+                <p><br>
+                    <span>Trụ sở chính</span><br>
+                    A: mTower – Số 4, ngõ 151B, Yên Lãng,<br>
+                    phường Láng Hạ, quận Đống Đa, Hà Nội<br>
+                    T: (+84) 4 3640 6627<br>
+                    E: info@mog.net<br>
+                    <br>
+                    <span>Chi nhánh HCM</span><br>
+                    A: 927/1 đường CMT8, phường 7, quận Tân Bình, Hồ Chí Minh<br>
+                    T: (+84) 8 39700380 - (+84) 8 39700377
+                </p>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <div class="footer_bottom-left">
+                <a class="footer_logo" href="#"></a>
+            </div>
+            <div class="footer_bottom-right">
+                <div class="popup_langue" id="popup_langue">
+                    <div style="display: flex; width: 123px;">
+                        <img src="../images/Eng.png" alt="">
+                        <a href="../index.html">English</a>
+                    </div> 
+                </div>
+                <button onclick="changeLan()" class="btn-langue" type="button">
+                    <div class="change">
+                        <img class="lan_sel" src="../images/vn.png" alt="">
+                        Việt Nam<span class="caret"></span>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </div>
+    <script>
+        //showGallery
+        var images = document.querySelectorAll('.photo-child-1 img')
+        var left = document.querySelector('.left')
+        var right = document.querySelector('.right')
+        var close = document.querySelector('.close')
+        var galleryImg = document.querySelector('.gallery_inner img')
+        var gallery = document.querySelector('.gallery')
+        var currentIndex = 0;
+    
+        function showGallery() {
+            if (currentIndex==0) {
+                left.classList.add('hide')
+            } else {
+                left.classList.remove('hide')
+            }
+            if (currentIndex==images.length - 1) {
+                right.classList.add('hide')
+            } else {
+                right.classList.remove('hide')
+            }
+            galleryImg.src = images[currentIndex].src
+            gallery.classList.add('show')
+        }
+
+        images.forEach((item, index)=>{
+            item.addEventListener('click', function() {
+                currentIndex = index
+                showGallery()
+            })
+        })
+
+        close.addEventListener('click', function() {
+            gallery.classList.remove('show')
+        })
+
+        document.addEventListener('keydown', function(e) {
+            if(e.keyCode == 27) {
+                gallery.classList.remove('show')
+            }
+        })
+
+        left.addEventListener('click', function() {
+            if (currentIndex > 0)
+                currentIndex--
+                showGallery()
+            }
+        )
+        right.addEventListener('click', function() {
+            if (currentIndex < images.length-1)
+                currentIndex++
+                showGallery()
+            }
+        )
+    </script>
 </body>
-<script>
-    // menu
-    $(document).ready(function() {
-        $('#btn-show').click(function() {
-            $('nav').slideToggle();
-        });
-    });
-</script>
 </html>

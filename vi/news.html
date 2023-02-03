@@ -10,15 +10,19 @@
     <script src="../script/main.js"></script>
     <script src="../script/news.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;900&family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <title>Tin tức | Trang web chính thức của MOG Việt Nam | MOG</title>
 </head>
 <body>
-    <!-- menu đầu tiên -->
+    <!-- Menu -->
     <button onclick="goToTop()" id="btn-top" title="Go to top"></button>
     <div class="banner">
         <div class="banner_nav">
             <a href="#" class="banner_nav-logo"></a>
-            <nav>
+            <nav class="nav-main">
                 <ul id="main-menu">
                     <li><a href="index.html">Trang chủ</a></li>
                     <li><a href="aboutus.html">Giới thiệu</a></li>
@@ -29,100 +33,305 @@
                     <li><a href="contacts.html">Liên hệ</a></li>
                 </ul>
             </nav>
-            <!-- onclick="showMenu()" -->
-            <button id="btn-show" title="show menu">Menu</button> 
+            <button onclick="showMenu()" id="btn-show" title="show menu">Menu</button> 
         </div>
         <div class="banner_text">
             <h2>Tin tức và các cập nhật mới nhất mà chúng tôi muốn chia sẻ</h2>
         </div>
         <div class="colored-line"></div>
     </div>
-
-    <!-- code tiếp các mục tại đây -->
-    <div class="content"></div>
-
-    <!-- footer cuối cùng -->
-    <div class="footer">
-        <div class="footer_top">
-            <div class="row">
-                <div class="row_left">
-                    <div class="footer_link">
-                        <div class="footer_tittle">Liên kết nhanh</div>
-                        <ul class="clearfix">
-                            <li><a href="#">Trang chủ</a></li>
-                            <li><a href="aboutus.html">Giới thiệu</a></li>
-                            <li><a href="products.html">Sản phẩm</a></li>
-                            <li><a href="news.html">Tin tức</a></li>
-                            <li><a href="resources.html">Thư viện</a></li>
-                            <li><a href="#">Chính sách bảo mật</a></li>
-                            <li><a href="contactus.html">Liên hệ</a></li>
-                            <li><a href="careers.html">Tuyển dụng</a></li>
-                            <li><a href="#">Điều khoản dịch vụ</a></li>
-                            <li><a>Mạng xã hội:</a></li>
-                            <li>
-                                <a href="https://www.facebook.com/mogvietnam">
-                                    <img class="logo-fb" src="../images/icon_face.png">
+    
+    <!-- Nav Menu Con -->
+    <div class="content">
+        <div class="content-menu">
+                <div class="content-menu-section">
+                    All
+                </div>
+                <div class="down">
+                    <ion-icon name="chevron-down-outline"></ion-icon>
+                </div>
+                <nav class="nav-bar">
+                    <ul>
+                        <li><a href="" class="active">Tất cả</a></li>
+                        <li><a href="">TCBC</a></li>
+                        <li><a href="">Quảng cáo trực tuyến</a></li>
+                        <li><a href="">Thanh toán điện tử & ví điện tử</a></li>
+                        <li><a href="">Tiện ích di động</a></li>
+                        <li><a href="">Kết nối bán lẻ</a></li>
+                        <li><a href="">Giải trí Game</a></li>
+                    </ul>
+                </nav>
+            </nav>
+        </div>
+        <div class="linethrough"></div>
+        <div class="content-container">
+            <div class="box-input-mobile">
+                <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                <input type="text" placeholder="type to search" class="news-search-mobile">
+            </div>
+            <div class="content-container-main">
+                <div class="main-left">
+                    <div class="main-left-top">
+                        <div class="main-news-1">
+                            <a href="https://thanhnien.vn/xuat-hien-trinh-duyet-web-tren-di-dong-made-in-viet-nam-dau-tien-post496434.html">
+                            <div class="main-news-img">
+                                <img src="../images/giaodien_olci.jpg">
+                            </div>
+                            <div class="main-news-title">
+                                Xuất hiện trình duyệt web trên di động 'made in Việt Nam' đầu tiên 
+                            </div>
+                            <div class="main-news-content">
+                                Theo đó, trình duyệt web Yolo được xây dựng trên nền tảng Chromium, 
+                                được phát triển riêng với những tính năng dành cho người Việt.
+                            </div>
+                            <div class="main-news-link">
+                                <a href="https://thanhnien.vn/xuat-hien-trinh-duyet-web-tren-di-dong-made-in-viet-nam-dau-tien-post496434.html" 
+                                class="main-news-link-add">Yolo
+                                <li></li>                                
+                                <span style="color: #4a4a4a">25/08/2015</span>
                                 </a>
-                            </li>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="main-news-1">
+                            <a href="https://ictnews.vietnamnet.vn/cntt/bao-mat/trinh-duyet-mobile-thuong-hieu-viet-yolo-co-kha-nang-canh-bao-web-doc-129578.ict">
+                            <div class="main-news-img">
+                                <img src="../images/new1.jpg">
+                            </div>
+                            <div class="main-news-title">
+                                Trình duyệt mobile thương hiệu Việt Yolo có khả năng cảnh báo web "độc"
+                            </div>
+                            <div class="main-news-content">
+                                Yolo Browser là trình duyệt web cho di động vừa được công ty MOG Việt Nam ra mắt. 
+                                Yolo Browser được xây dựng trên nền tảng Chromium, nền tảng tiên tiến nhất hiện nay trên thế giới, 
+                                có tính năng duyệt web an toàn với độ bảo mật cao.
+                            </div>
+                            <div class="main-news-link">
+                                <a href="https://ictnews.vietnamnet.vn/cntt/bao-mat/trinh-duyet-mobile-thuong-hieu-viet-yolo-co-kha-nang-canh-bao-web-doc-129578.ict" 
+                                class="main-news-link-add">Yolo
+                                <li></li>                                
+                                <span style="color: #4a4a4a">27/08/2015</span>
+                                </a>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="main-news-1">
+                            <a href="https://thanhnien.vn/dich-vu-thanh-toan-dien-tu-1pay-hop-tac-voi-fortumo-post505556.html">
+                            <div class="main-news-img">
+                                <img src="../images/new3.jpg">
+                            </div>
+                            <div class="main-news-title">
+                                Thanh toán điện tử 1Pay hợp tác với Fortumo
+                            </div>
+                            <div class="main-news-content">
+                                Theo đó, công ty thanh toán di động Fortumo đã đồng ý hợp tác với đơn vị cung cấp dịch vụ thanh toán 1Pay 
+                                (thuộc công ty MOG Việt Nam) cùng triển khai phương thức thanh toán trực tiếp thông qua 
+                                tài khoản điện thoại (carrier billing) tại một số thị trường Đông Nam Á.
+                            </div>
+                            <div class="main-news-link">
+                                <a href="https://thanhnien.vn/dich-vu-thanh-toan-dien-tu-1pay-hop-tac-voi-fortumo-post505556.html" 
+                                class="main-news-link-add">1Pay
+                                <li></li>                                
+                                <span style="color: #4a4a4a">30/09/2015</span>
+                                </a>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="main-news-1">
+                            <a href="https://www.brandsvietnam.com/congdong/topic/1659-Ong-lon-Cheetah-Mobile-ky-vong-sanh-ngang-Facebook-va-Google-tai-Viet-Nam">
+                            <div class="main-news-img">
+                                <img src="../images/new5.jpg">
+                            </div>
+                            <div class="main-news-title">
+                                Ông lớn Cheetal Mobile kỳ vọng sánh ngang Facebook và Google tại Việt Nam
+                            </div>
+                            <div class="main-news-content">
+                                Động thái này một lần nữa cho thấy thị trường quảng cáo trực tuyến tại Việt nam đang thực sự thu hút sự quan tâm 
+                                của các ông lớn công nghệ trên thế giới, và dự báo rằng, 
+                                đây sẽ sớm không còn là sân chơi của riêng Facebook và Google.
+                            </div>
+                            <div class="main-news-link">
+                                <a href="https://www.brandsvietnam.com/congdong/topic/1659-Ong-lon-Cheetah-Mobile-ky-vong-sanh-ngang-Facebook-va-Google-tai-Viet-Nam" 
+                                class="main-news-link-add">Admatic
+                                <li></li>                                
+                                <span style="color: #4a4a4a">25/08/2015</span>
+                                </a>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="main-news-1">
+                            <a href="https://cafebiz.vn/cong-nghe/cheetah-mobile-ke-thach-thuc-facebook-google-la-ai-201511181033502.chn">
+                            <div class="main-news-img">
+                                <img src="../images/new6.jpg">
+                            </div>
+                            <div class="main-news-title">
+                                Cheetah Mobile, "kẻ thách thức" Facebook, Google là ai?
+                            </div>
+                            <div class="main-news-content">
+                                Kỳ vọng của Cheetah đã gây ra những tranh luận trái chiều khi có người cho rằng đây chỉ là một chiêu thức “dựa hơi” 
+                                ông lớn để đánh bóng tên tuổi. Những cũng có ý kiến cho rằng Cheetah Mobile hoàn toàn có thể làm được điều này khi mà tiềm lực của họ không hề nhỏ chút nào. 
+                                Vậy Cheetah là ai và quy mô của họ lớn như thế nào?
+                            </div>
+                            <div class="main-news-link">
+                                <a href="https://cafebiz.vn/cong-nghe/cheetah-mobile-ke-thach-thuc-facebook-google-la-ai-201511181033502.chn" 
+                                class="main-news-link-add">Admatic
+                                <li></li>                                
+                                <span style="color: #4a4a4a">25/08/2015</span>
+                                </a>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="main-news-1">
+                            <a href="https://xahoithongtin.com.vn/thi-truong/201512/bank-20-nen-tang-giup-thanh-toan-bang-the-atm-tren-mobile-514437/">
+                            <div class="main-news-img">
+                                <img src="../images/new4.jpg">
+                            </div>
+                            <div class="main-news-title">
+                                Bank 2.0: Nền tảng giúp thanh toán bằng thẻ ATM trên mobile
+                            </div>
+                            <div class="main-news-content">
+                                Vừa qua, đơn vị cung cấp dịch vụ thanh toán 1Pay chính thức ra mắt sản phẩm Bank 2.0 - nền tảng 
+                                thanh toán mobile cho phép người dùng sử dụng thẻ ATM của hơn 24 ngân hàng nội địa để thanh toán tiền mua hàng hóa, 
+                                dịch vụ trực tiếp trên di động, thay vì phải đăng nhập tài khoản Internet Banking.
+                            </div>
+                            <div class="main-news-link">
+                                <a href="https://xahoithongtin.com.vn/thi-truong/201512/bank-20-nen-tang-giup-thanh-toan-bang-the-atm-tren-mobile-514437/" 
+                                class="main-news-link-add">1Pay
+                                <li></li>                                
+                                <span style="color: #4a4a4a">25/08/2015</span>
+                                </a>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="main-left-bottom">
+                        <ul>
+                            <li><a href="" id="active" style="background-color: #fff;">1</a></li>
+                            <li><a href="">2</a></li>
+                            <li><a href="">3</a></li>
+                            <li><a href="">4</a></li>
+                            <li><a href="">5</a></li>
+                            <li><a href="">»</a></li>
                         </ul>
                     </div>
-                    <div class="footer_link">
-                        <div class="footer_tittle">Nhận bản tin</div>
-                        <div class="form-group">
-                            <div class="input-email">
-                                <input type="email" class="input-text" placeholder="Nhập email của bạn">
-                            </div>
-                            <div class="btn-email">
-                                <button type="submit" class="btn btn-sub">Nhận</button>
-                            </div>
+                </div>       
+                <div class="main-right">
+                    <div class="main-right-top">
+                        <div class="box-input">
+                            <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                            <input type="text" placeholder="Nhập để tìm kiếm" class="news-search">
+                        </div>
+                        <div class="main-right-title">Tin nổi bật</div>
+                        <div class="linethrough" style="width: 120%"></div>
+                        <div class="main-right-content">
+                            <ul>
+                                <li><a href="https://www.vietnamplus.vn/trinh-duyet-di-dong-co-kha-nang-nhan-dien-cac-trang-web-lua-dao/340446.vnp">Trình duyệt di động có khả năng nhận diện các trang web lừa đảo</a></li>
+                                <li><a href="https://genk.vn/trinh-duyet-di-dong-yolo-browser-danh-cho-nguoi-viet-chinh-thuc-ra-mat-20150828133040472.chn">Trình duyệt di động Yolo Browser dành cho người Việt chính thức ra mắt</a></li>
+                                <li><a href="https://www.finextra.com/news/announcement.aspx?pressreleaseid=61435">Vietnamese payment processor 1Pay adopts direct carrier billing with Fortumo</a></li>
+                                <li><a href="https://echip.vietnamnet.vn/fortumo-hop-tac-1pay-mo-rong-thanh-toan-qua-tai-khoan-dien-thoai-a20150930080407651-c1072.html">Fortumo hợp tác 1Pay mở rộng thanh toán qua tài khoản điện thoại</a></li>
+                                <li><a href="https://www.vietnamplus.vn/1pay-ho-tro-doanh-nghiep-viet-thu-tien-tu-nguoi-dung-trong-khu-vuc/346403.vnp">1Pay hỗ trợ doanh nghiệp Việt thu tiền từ người dùng trong khu vực</a></li>
+                                <li><a href="https://thanhnien.vn/dich-vu-thanh-toan-dien-tu-1pay-hop-tac-voi-fortumo-post505556.html">Dịch vụ thanh toán điện tử 1Pay hợp tác với Fortumo</a></li>
+                            </ul>
                         </div>
                     </div>
-                </div>
-                <div class="row_right">
-                    <div class="footer_tittle">Liên hệ</div>
-                    <p style="color: rgba(255, 255, 255, 0.432)"><br>
-                        <span style="color: rgb(228, 228, 228);font-weight: 600;">Trụ sở chính</span><br>
-                        A: mTower – Số 4, Ngõ 151B, Yên Lãng,
-                        phường Láng Hạ, quận Đống Đa, Hà Nội<br>
-                        T: (+84) 4 3640 6627<br>
-                        E: info@mog.net<br>
-                        <br>
-                        <span style="color: rgb(228, 228, 228);font-weight: 600;">Chi nhánh HCM</span><br>
-                        A: 927/1 đường CMT8, phường 7, quận Tân Bình, Hồ Chí Minh<br>
-                        T: (+84) 8 39700380 - (+84) 8 39700377
-                    </p>
-                </div>
+                    <div class="main-right-bottom">
+                        <div class="main-right-title">Xem nhiều nhất</div>
+                        <div class="linethrough" style="width: 120%"></div>
+                        <div class="main-right-content">
+                            <ul>
+                                <li><a href="https://www.vietnamplus.vn/trinh-duyet-di-dong-co-kha-nang-nhan-dien-cac-trang-web-lua-dao/340446.vnp">Trình duyệt di động có khả năng nhận diện các trang web lừa đảo</a></li>
+                                <li><a href="https://genk.vn/trinh-duyet-di-dong-yolo-browser-danh-cho-nguoi-viet-chinh-thuc-ra-mat-20150828133040472.chn">Trình duyệt di động Yolo Browser dành cho người Việt chính thức ra mắt</a></li>
+                                <li><a href="https://www.finextra.com/news/announcement.aspx?pressreleaseid=61435">Vietnamese payment processor 1Pay adopts direct carrier billing with Fortumo</a></li>
+                                <li><a href="https://echip.vietnamnet.vn/fortumo-hop-tac-1pay-mo-rong-thanh-toan-qua-tai-khoan-dien-thoai-a20150930080407651-c1072.html">Fortumo hợp tác 1Pay mở rộng thanh toán qua tài khoản điện thoại</a></li>
+                                <li><a href="https://www.vietnamplus.vn/1pay-ho-tro-doanh-nghiep-viet-thu-tien-tu-nguoi-dung-trong-khu-vuc/346403.vnp">1Pay hỗ trợ doanh nghiệp Việt thu tiền từ người dùng trong khu vực</a></li>
+                                <li><a href="https://thanhnien.vn/dich-vu-thanh-toan-dien-tu-1pay-hop-tac-voi-fortumo-post505556.html">Dịch vụ thanh toán điện tử 1Pay hợp tác với Fortumo</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div> 
             </div>
         </div>
-        <div class="footer_bottom" style="border-top: 1px solid #393939;">
-            <div class="footer_bottom-wrap" style="max-height: 65px;">
-                <div class="footer_bottom-wrap-left">
-                    <a class="footer_logo" href="#"></a>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer" style="margin-top: 50px;">
+        <div class="footer_top">
+            <div class="footer_top-left">
+                <div class="footer_link">
+                    <div class="footer_tittle">Liên kết nhanh</div>
+                    <ul class="clearfix">
+                        <li><a href="#">Trang chủ</a></li>
+                        <li><a href="aboutus.html">Giới thiệu</a></li>
+                        <li><a href="products.html">Sản phẩm</a></li>
+                        <li><a href="news.html">Tin tức</a></li>
+                        <li><a href="resources.html">Thư viện</a></li>
+                        <li><a href="#">Chính sách bảo mật</a></li>
+                        <li><a href="contactus.html">Liên hệ</a></li>
+                        <li><a href="careers.html">Tuyển dụng</a></li>
+                        <li><a href="#">Điều khoản dịch vụ</a></li>
+                        <li><a>Mạng xã hội:</a></li>
+                        <li>
+                            <a href="https://www.facebook.com/mogvietnam">
+                                <img class="logo-fb" src="../images/icon_face.png">
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="footer_bottom-wrap-right" style="max-width: 108.86px;">
-                    <button onclick="changeLan()" class="btn-langue" type="button">
-                        <div style="display: flex;">
-                            <div><img class="lan_sel" src="../images/vn.png" alt=""></div>
-                            <div style="margin-left: 6px;">Việt Nam<span class="caret"></span></div>
+                <div class="footer_link">
+                    <div class="footer_tittle">Nhận bản tin</div>
+                    <div class="form-group">
+                        <div class="input-email">
+                            <input type="email" class="input-text" placeholder="Enter your email address">
                         </div>
-                    </button>
-                    <div class="popup_langue" id="popup_langue" style="width: 145px;">
-                        <div style="display: flex;">
-                            <img style="width: 27px; margin-top: 3px;" src="../images/Eng.png" alt="">
-                            <a href="../index.html">English</a>
-                        </div>       
+                        <div class="btn-email">
+                            <button type="submit" class="btn btn-sub">Nhận</button>
+                        </div>
                     </div>
                 </div>
+            </div>
+            <div class="footer_top-right">
+                <div class="footer_tittle">Liên hệ</div>
+                <p><br>
+                    <span>Trụ sở chính</span><br>
+                    A: mTower – Số 4, ngõ 151B, Yên Lãng,<br>
+                    phường Láng Hạ, quận Đống Đa, Hà Nội<br>
+                    T: (+84) 4 3640 6627<br>
+                    E: info@mog.net<br>
+                    <br>
+                    <span>Chi nhánh HCM</span><br>
+                    A: 927/1 đường CMT8, phường 7, quận Tân Bình, Hồ Chí Minh<br>
+                    T: (+84) 8 39700380 - (+84) 8 39700377
+                </p>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <div class="footer_bottom-left">
+                <a class="footer_logo" href="#"></a>
+            </div>
+            <div class="footer_bottom-right">
+                <div class="popup_langue" id="popup_langue">
+                    <div style="display: flex; width: 123px;">
+                        <img src="../images/Eng.png" alt="">
+                        <a href="../index.html">English</a>
+                    </div> 
+                </div>
+                <button onclick="changeLan()" class="btn-langue" type="button">
+                    <div class="change">
+                        <img class="lan_sel" src="../images/vn.png" alt="">
+                        Việt Nam<span class="caret"></span>
+                    </div>
+                </button>
             </div>
         </div>
     </div>
 </body>
 <script>
-    // menu
-    $(document).ready(function() {
-        $('#btn-show').click(function() {
-            $('nav').slideToggle();
-        });
-    });
+    down = document.querySelector(".down");
+    down.onclick = function() {
+        navBar = document.querySelector(".nav-bar");
+        navBar.classList.toggle("active");
+        input = document.querySelector(".box-input-mobile")
+        input.classList.toggle("active2");
+    }
 </script>
 </html>

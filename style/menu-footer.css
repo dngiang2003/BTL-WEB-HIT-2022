@@ -7,13 +7,17 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 70px;
+}
+
 a {
     text-decoration: none;
 }
 
-html {
-    scroll-behavior: smooth;
-    scroll-padding-top: 70px;
+ul li {
+    list-style: none;
 }
 
 .banner {
@@ -43,14 +47,6 @@ html {
     width: 100px;
     height: 48px;
     background-position: 0px 0px;
-}
-
-ul {
-    list-style-type: none;
-}
-
-#main-menu.test {
-    display: none;
 }
 
 nav {
@@ -107,26 +103,29 @@ nav #main-menu a {
     text-align: center;
     color: #FFFFFF;
     line-height: 56px;
-    font-weight: 300;
+    font-weight: 500;
     margin: 0px auto;
     max-width: 75%;
 }
 
 .footer {
-    height: 471px;
     width: 100%;
     background-color: #222222;
     color: #4a4a4a;
     font-size: 14px;
     line-height: 24px;
 }
+ 
+.footer_top, .footer_bottom {
+    width: 1170px;
+    margin: 0 auto;
+    padding: 20px 0px;
+}
 
 .footer_top {
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: 9%;
-    margin-left: 9%;
-    display: flex;
+    display: grid;
+    grid-template-columns: 72% 23%;
+    column-gap: 5%;
 }
 
 .footer_link ul {
@@ -139,7 +138,8 @@ nav #main-menu a {
 .footer_link ul li a {
     text-decoration: none;
     display: block;
-    color: rgba(255, 255, 255, 0.432);
+    color: rgb(174, 173, 173);
+    opacity: .8;
     padding-top: 15px;
     font-size: 13px;
 }
@@ -157,13 +157,6 @@ nav #main-menu a {
     opacity: 1;
 }
 
-.row {
-    width: 1170px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: 75% 25%;
-}
-
 .footer_tittle {
     color: #efefef;
     font-size: 17px;
@@ -172,20 +165,9 @@ nav #main-menu a {
     border-bottom: 1px solid #393939;
 }
 
-.row_left {
-    margin-right: 20px;
-}
-
-.row_right {
-    margin-left: 20px;
-    max-height: 300px;
-}
-
 .form-group {
-    padding-top: 27px;
-    padding-bottom: 35px;
+    margin: 20px 0px;
     display: flex;
-    width: 75%;
 }
 
 .input-email {
@@ -217,6 +199,11 @@ nav #main-menu a {
     box-shadow: 0px 0px 2px 3px rgb(204, 201, 201);
 }
 
+.footer_top-right p {
+    color: rgb(174, 173, 173);
+    opacity: .8;
+}
+
 .btn-sub {
     border: none;
     font-size: 14px;
@@ -230,21 +217,24 @@ nav #main-menu a {
     background-color: #9b9b9b;
 }
 
-.footer {
-    width: 100%;
-    background-color: #222222;
-    color: #4a4a4a;
-}
-
-.footer_bottom-wrap {
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: 9%;
-    margin-left: 9%;
-    background-color: #222222;
+.footer_bottom {
+    border-top: 1px solid #393939;
     display: flex;
     justify-content: space-between;
-    padding-top: 22px;
+    align-items: center;
+}
+
+.footer_bottom-right {
+    position: relative;
+}
+
+button .change {
+    display: flex;
+    align-items: center;
+}
+
+button .change img {
+    margin: 0px 5px;
 }
 
 .footer_logo {
@@ -271,11 +261,11 @@ nav #main-menu a {
 }
 
 .popup_langue {
-    position: relative;
+    position: absolute;
     padding: 5px 20px;
-    right: 45px;
-    top: -90px;
     border-radius: 5px;
+    right: 0px;
+    bottom: 55px;
     background-color: white;
     display: none;
 }
@@ -293,16 +283,10 @@ nav #main-menu a {
     height: 0;
     margin-left: 5px;
     vertical-align: middle;
-    /* border-bottom: 4px dashed; */
     border-bottom: 4px solid;
     border-right: 4px solid transparent;
     border-left: 4px solid transparent;
-}
-
-.footer_bottom-wrap-right img {
-    object-fit: cover;
-    width: 80%;
-    height: 80%;
+    opacity: .6;
 }
 
 #btn-top {
@@ -335,17 +319,6 @@ nav #main-menu a {
     background-color: rgba(0, 0, 0, 0);
 }
 
-.banner_nav.fixed {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: #fff;
-    padding-bottom: 2rem;
-    z-index: 1000;
-    border-bottom: 1px solid #cacaca;
-}
-
 .banner_nav.fixed .banner_nav-logo {
     background-position: 0px -48px;
 }
@@ -371,7 +344,37 @@ nav #main-menu a {
     opacity: .8;
 }
 
-@media only screen and (max-width: 768px) {
+@media (min-width: 1200px) and (max-width: 1366px) {
+    .footer_top, .footer_bottom {
+        width: 1100px;
+    }
+}
+
+@media (min-width: 993px) and (max-width: 1201px) {
+    .footer_top, .footer_bottom {
+        width: 920px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 994px) {
+    .footer_top, .footer_bottom {
+        width: 740px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer_top, .footer_bottom {
+        width: 100%;
+    }
+    .footer {
+        padding: 0px 15px;
+    }
+    .footer_top {
+        grid-template-columns: 100%;
+    }
+    .footer_tittle {
+        padding: 10px 0px;
+    }
     #main-menu {
         width: 100%;
         flex-direction: column;
@@ -382,53 +385,23 @@ nav #main-menu a {
         background-color: white;
         z-index: 1000;
     }
-
     #btn-show {
         display: block;
     }
-
     #main-menu li a {
         padding: 15px;
         color: rgb(39, 37, 37);
         margin: 0;
         border-top: 1px solid #eee;
     }
-
     #main-menu li #home {
         background-color: rgba(0, 0, 0, 0);
         color: #00386c;
     }
-
     #main-menu li a:hover {
         background-color: rgba(0, 0, 0, 0);
         color: #00386c;
     }
-
-    .row {
-        display: block;
-        background-color: #222222;
-    }
-
-    .row_right {
-        margin-left: 0px;
-        background-color: #222222;
-        max-width: 800px;
-    }
-
-    .footer {
-        height: 100%;
-    }
-
-    .footer_top, .footer_bottom-wrap {
-        margin-left: 0px;
-        padding-bottom: 30px;
-        margin-right: 0px;
-    }
-
-    .footer_logo, .btn-langue {
-        margin-bottom: 10px;
-    }
-
     .banner_text h2 {
         font-size: 25px;
         line-height: 30px;
@@ -437,11 +410,9 @@ nav #main-menu a {
         max-width: 90%;
         margin-top: -30px;
     }
-
     .banner {
         height: 300px;
     }
-
     .banner_nav-logo {
         margin-top: 15px;
     }
@@ -453,19 +424,5 @@ nav #main-menu a {
     }
     .nav-main.show {
         display: block;
-    }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1485px) {
-    .footer_bottom-wrap {
-        margin-right: 12%;
-        margin-left: 10%;
-    }
-}
-
-@media only screen and (min-width: 1920px) {
-    .footer_bottom-wrap {
-        margin-right: 19.5%;
-        margin-left: 18.5%;
     }
 }

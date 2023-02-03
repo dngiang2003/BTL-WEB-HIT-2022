@@ -6,6 +6,7 @@
     margin-top: 30px;
     padding: 25px 0px 15px;
 }
+
 .content-title-text {
     text-align: center;
     font-size: 35px;
@@ -23,6 +24,7 @@
     position: relative;
     width: 50px;
 }
+
 .content-1 {
     padding-bottom: 50px;
 }
@@ -51,6 +53,7 @@
     padding: 20px;
     margin-bottom: 10px;
     overflow: visible;
+    margin-bottom: 25px;
 }
 
 .intro_block p {
@@ -77,15 +80,16 @@
     text-align: right;
 }
 
-
 .job_list p {
     margin: 10px 0;
 }
+
 .job_list .job_list-tittle {
     font-size: 16px;
     font-weight: 600;
     margin: 10px 0 0 0;
 }
+
 .job_list .job_item {
     margin-left: 20px;
     padding: 15px 0 15px 0px;
@@ -101,7 +105,6 @@
     opacity: 0.8;
     margin-right: 5px;
 } 
-
 
 .job_list p b {
     font-weight: 600;
@@ -123,6 +126,7 @@
     color: #4a4a4a;
     opacity: 0.8;
 }
+
 .learmore p a:hover {
     color: #0d4e99;
     opacity: 1;
@@ -134,7 +138,6 @@
     margin: 50px auto 0 auto;
     opacity: 0.8;
 }
-
 
 @media (min-width: 1200px) and (max-width: 1366px) {
     .content-main-1 {
@@ -151,6 +154,7 @@
         width: 720px;
     }
 }
+
 @media (max-width: 768px) {
     .content-main-1 {
         width: 100%;

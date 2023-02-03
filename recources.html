@@ -12,11 +12,11 @@
     <script src="./script/recources.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
     <title>Resources | The official website of MOG Vietnam | MOG</title>
-    <link rel="stylesheet" href="menu-footer.css">
+
 </head>
 <body>
     <div>
-    <!-- menu đầu tiên -->
+    <!-- Menu -->
     <button onclick="goToTop()" id="btn-top" title="Go to top"></button>
     <div class="banner">
         <div class="banner_nav">
@@ -32,7 +32,6 @@
                     <li><a href="contacts.html">Contacts</a></li>
                 </ul>
             </nav>
-            <!-- onclick="showMenu()" -->
             <button id="btn-show" title="show menu">Menu</button> 
         </div>
         <div class="banner_text">
@@ -40,8 +39,8 @@
         </div>
         <div class="colored-line"></div>
     </div>
-
-    <!-- code tiếp các mục tại đây -->
+    
+    <!-- Screen & Photos -->
     <div class="content">
         <div class="resource-container">
             <div class="photo">
@@ -86,7 +85,6 @@
                     <div class="button"><a href="">Read more</a></div>
                 </div>
             </div>
-
             <div class="linethrough"></div>
             <div class="video">
                 <h1>Videos</h1>
@@ -171,150 +169,131 @@
         </div>
     </div>
 
-    <!-- footer cuối cùng -->
+    <!-- Footer -->
     <div class="footer">
         <div class="footer_top">
-            <div class="row">
-                <div class="row_left">
-                    <div class="footer_link">
-                        <div class="footer_tittle">Quick Links</div>
-                        <ul class="clearfix">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="aboutus.html">About Us</a></li>
-                            <li><a href="products.html">Products</a></li>
-                            <li><a href="news.html">News</a></li>
-                            <li><a href="resources.html">Resources</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
-                            <li><a href="contactus.html">Contact Us</a></li>
-                            <li><a href="careers.html">Careers</a></li>
-                            <li><a href="#">Terms of Service</a></li>
-                            <li><a>Social Network:</a></li>
-                            <li>
-                                <a href="https://www.facebook.com/mogvietnam">
-                                    <img class="logo-fb" src="./images/icon_face.png">
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="footer_link">
-                        <div class="footer_tittle">Newsletter</div>
-                        <div class="form-group">
-                            <div class="input-email">
-                                <input type="email" class="input-text" placeholder="Enter your email address">
-                            </div>
-                            <div class="btn-email">
-                                <button type="submit" class="btn btn-sub">Subscribe</button>
-                            </div>
+            <div class="footer_top-left">
+                <div class="footer_link">
+                    <div class="footer_tittle">Quick Links</div>
+                    <ul class="clearfix">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="aboutus.html">About Us</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="contactus.html">Contact Us</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a>Social Network:</a></li>
+                        <li>
+                            <a href="https://www.facebook.com/mogvietnam">
+                                <img class="logo-fb" src="./images/icon_face.png">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer_link">
+                    <div class="footer_tittle">Newsletter</div>
+                    <div class="form-group">
+                        <div class="input-email">
+                            <input type="email" class="input-text" placeholder="Enter your email address">
+                        </div>
+                        <div class="btn-email">
+                            <button type="submit" class="btn btn-sub">Subscribe</button>
                         </div>
                     </div>
                 </div>
-                <div class="row_right">
-                    <div class="footer_tittle">Contact Us</div>
-                    <p style="color: rgba(255, 255, 255, 0.432)"><br>
-                        <span style="color: rgb(228, 228, 228);font-weight: 600;">Head Office</span><br>
-                        A: mTower – 4, Lane 151B, Yen Lang,<br>
-                        Dong Da, Ha Noi<br>
-                        T: (+84) 4 3640 6627<br>
-                        E: info@mog.net<br>
-                        <br>
-                        <span style="color: rgb(228, 228, 228);font-weight: 600;">HCM Branch</span><br>
-                        A: 927/1 CMT8 Str, 7 Ward, Tan Binh Dist, HCM City, Vietnam<br>
-                        T: (+84) 8 39700380 - (+84) 8 39700377
-                    </p>
-                </div>
+            </div>
+            <div class="footer_top-right">
+                <div class="footer_tittle">Contact Us</div>
+                <p><br>
+                    <span>Head Office</span><br>
+                    A: mTower – 4, Lane 151B, Yen Lang,<br>
+                    Dong Da, Ha Noi<br>
+                    T: (+84) 4 3640 6627<br>
+                    E: info@mog.net<br>
+                    <br>
+                    <span>HCM Branch</span><br>
+                    A: 927/1 CMT8 Str, 7 Ward, Tan Binh Dist, HCM City, Vietnam<br>
+                    T: (+84) 8 39700380 - (+84) 8 39700377
+                </p>
             </div>
         </div>
-        
-        <div class="footer_bottom" style="border-top: 1px solid #393939;">
-            <div class="footer_bottom-wrap" style="max-height: 65px;">
-                <div class="footer_bottom-wrap-left">
-                    <a class="footer_logo" href="#"></a>
+        <div class="footer_bottom">
+            <div class="footer_bottom-left">
+                <a class="footer_logo" href="#"></a>
+            </div>
+            <div class="footer_bottom-right">
+                <div class="popup_langue" id="popup_langue">
+                    <div style="display: flex; width: 123px;">
+                        <img src="./images/vn.png" alt="">
+                        <a href="./vi/index.html">Vietnam</a>
+                    </div> 
                 </div>
-                <div class="footer_bottom-wrap-right" style="max-width: 94.891px;">
-                    <button onclick="changeLan()" class="btn-langue" type="button">
-                        <div style="display: flex;">
-                            <div><img class="lan_sel" src="./images/Eng.png" alt=""></div>
-                            <div style="margin-left: 6px;">English<span class="caret"></span></div>
-                        </div>
-                    </button>
-                    <div class="popup_langue" id="popup_langue" style="width: 145px;">
-                        <div style="display: flex;">
-                            <img style="width: 27px; margin-top: 3px;" src="./images/vn.png" alt="">
-                            <a href="./vi/index.html">Vietnam</a>
-                        </div>       
+                <button onclick="changeLan()" class="btn-langue" type="button">
+                    <div class="change">
+                        <img class="lan_sel" src="./images/Eng.png" alt="">
+                        English<span style="margin-bottom: 0 !important;" class="caret"></span>
                     </div>
-                </div>
+                </button>
             </div>
         </div>
     </div>
-</div>
-    <!-- showGallery -->
-    <div class="gallery">
-        <i class="fa-regular fa-circle-xmark close"></i>
-        <div class="gallery_inner">
-            <img src="./images/img_spaces_1.png">
-        </div>
-        <div class="control left">
-            <i class="fa-solid fa-chevron-left"></i>
-        </div>
-        <div class="control right">
-            <i class="fa-solid fa-chevron-right"></i>
-        </div>
-    </div>
-    
     <script>
-    //showGallery
-            var images = document.querySelectorAll('.photo-child-1 img')
-            var left = document.querySelector('.left')
-            var right = document.querySelector('.right')
-            var close = document.querySelector('.close')
-            var galleryImg = document.querySelector('.gallery_inner img')
-            var gallery = document.querySelector('.gallery')
-            var currentIndex = 0;
+        //showGallery
+        var images = document.querySelectorAll('.photo-child-1 img')
+        var left = document.querySelector('.left')
+        var right = document.querySelector('.right')
+        var close = document.querySelector('.close')
+        var galleryImg = document.querySelector('.gallery_inner img')
+        var gallery = document.querySelector('.gallery')
+        var currentIndex = 0;
     
-            function showGallery() {
-                if (currentIndex==0){
-                    left.classList.add('hide')
-                }else {
-                    left.classList.remove('hide')
-                }
-                if (currentIndex==images.length - 1){
-                    right.classList.add('hide')
-                }else {
-                    right.classList.remove('hide')
-                }
-                galleryImg.src = images[currentIndex].src
-                gallery.classList.add('show')
+        function showGallery() {
+            if (currentIndex==0) {
+                left.classList.add('hide')
+            } else {
+                left.classList.remove('hide')
             }
-            images.forEach((item, index)=>{
-                item.addEventListener('click', function(){
-                    currentIndex = index
-                    showGallery()
-                })
+            if (currentIndex==images.length - 1) {
+                right.classList.add('hide')
+            } else {
+                right.classList.remove('hide')
+            }
+            galleryImg.src = images[currentIndex].src
+            gallery.classList.add('show')
+        }
+
+        images.forEach((item, index)=>{
+            item.addEventListener('click', function() {
+                currentIndex = index
+                showGallery()
             })
-    
-            close.addEventListener('click', function(){
+        })
+
+        close.addEventListener('click', function() {
+            gallery.classList.remove('show')
+        })
+
+        document.addEventListener('keydown', function(e) {
+            if(e.keyCode == 27) {
                 gallery.classList.remove('show')
-            })
-    
-            document.addEventListener('keydown', function(e) {
-                if(e.keyCode == 27) {
-                    gallery.classList.remove('show')
-                }
-            })
-    
-            left.addEventListener('click', function(){
-                if (currentIndex > 0)
-                    currentIndex--
-                    showGallery()
-                }
-            )
-            right.addEventListener('click', function(){
-                if (currentIndex < images.length-1)
-                    currentIndex++
-                    showGallery()
-                }
-            )
+            }
+        })
+
+        left.addEventListener('click', function() {
+            if (currentIndex > 0)
+                currentIndex--
+                showGallery()
+            }
+        )
+        right.addEventListener('click', function() {
+            if (currentIndex < images.length-1)
+                currentIndex++
+                showGallery()
+            }
+        )
     </script>
 </body>
 </html>

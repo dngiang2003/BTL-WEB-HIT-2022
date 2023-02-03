@@ -9,16 +9,16 @@
     <link rel="stylesheet" href="../style/careers.css">
     <script src="../script/main.js"></script>
     <script src="../script/careers.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <title>Tuyển dụng | Trang web chính thức của MOG Việt Nam | MOG</title>
 </head>
 <body>
-    <!-- menu đầu tiên -->
+    <!-- Menu -->
     <button onclick="goToTop()" id="btn-top" title="Go to top"></button>
     <div class="banner">
         <div class="banner_nav">
             <a href="#" class="banner_nav-logo"></a>
-            <nav>
+            <nav class="nav-main">
                 <ul id="main-menu">
                     <li><a href="index.html">Trang chủ</a></li>
                     <li><a href="aboutus.html">Giới thiệu</a></li>
@@ -29,100 +29,177 @@
                     <li><a href="contacts.html">Liên hệ</a></li>
                 </ul>
             </nav>
-            <!-- onclick="showMenu()" -->
-            <button id="btn-show" title="show menu">Menu</button> 
+            <button onclick="showMenu()" id="btn-show" title="show menu">Menu</button> 
         </div>
         <div class="banner_text">
             <h2>Tham gia đội ngũ nhân sự đầy nhiệt huyết của MOG</h2>
         </div>
         <div class="colored-line"></div>
     </div>
-
-    <!-- code tiếp các mục tại đây -->
-    <div class="content"></div>
-
-    <!-- footer cuối cùng -->
-    <div class="footer">
-        <div class="footer_top">
-            <div class="row">
-                <div class="row_left">
-                    <div class="footer_link">
-                        <div class="footer_tittle">Liên kết nhanh</div>
-                        <ul class="clearfix">
-                            <li><a href="#">Trang chủ</a></li>
-                            <li><a href="aboutus.html">Giới thiệu</a></li>
-                            <li><a href="products.html">Sản phẩm</a></li>
-                            <li><a href="news.html">Tin tức</a></li>
-                            <li><a href="resources.html">Thư viện</a></li>
-                            <li><a href="#">Chính sách bảo mật</a></li>
-                            <li><a href="contactus.html">Liên hệ</a></li>
-                            <li><a href="careers.html">Tuyển dụng</a></li>
-                            <li><a href="#">Điều khoản dịch vụ</a></li>
-                            <li><a>Mạng xã hội:</a></li>
-                            <li>
-                                <a href="https://www.facebook.com/mogvietnam">
-                                    <img class="logo-fb" src="../images/icon_face.png">
-                                </a>
-                            </li>
-                        </ul>
+    
+    <!-- Latest job vacancies -->
+    <div class="content-1">
+        <div class="content-title">
+            <div class="content-title-text">Cơ hội việc làm mới nhất tại MOG</div>
+            <div class="content-title-line"></div>
+        </div>
+        <div class="content-main-1">
+            <div class="intro_block">
+                <div class="side_image"></div>
+                <p>“Tại MOG, chúng tôi chào đón những con người nhiệt huyết và tài năng với chế độ đãi ngộ cực kì hấp dẫn. Môi trường làm việc với tính hỗ trợ cao mang lại cho tất cả mọi người cơ hội thể hiện kĩ năng và năng lực.”</p>
+                <p class="author-text">-- Thông điệp từ Trưởng Phòng Nhân sự MOG --</p>
+            </div>
+            <div class="job_list">
+                <h2 class="job_list-tittle">Sales & Marketing</h2>
+                <div class="job_item">
+                    <div class="job_name">
+                        <p>Social Medial Specialist</p>
                     </div>
-                    <div class="footer_link">
-                        <div class="footer_tittle">Nhận bản tin</div>
-                        <div class="form-group">
-                            <div class="input-email">
-                                <input type="email" class="input-text" placeholder="Nhập email của bạn">
-                            </div>
-                            <div class="btn-email">
-                                <button type="submit" class="btn btn-sub">Nhận</button>
-                            </div>
+                    <div class="job_deets">
+                        <div class="job_loc">
+                        <p><i class="fa-solid fa-location-dot"></i>Hanoi<b>Deadline:</b> 30/04/2016</p>
                         </div>
                     </div>
+                    <a href="#" class="btn-job">Apply</a>
                 </div>
-                <div class="row_right">
-                    <div class="footer_tittle">Liên hệ</div>
-                    <p style="color: rgba(255, 255, 255, 0.432)"><br>
-                        <span style="color: rgb(228, 228, 228);font-weight: 600;">Trụ sở chính</span><br>
-                        A: mTower – Số 4, Ngõ 151B, Yên Lãng,
-                        phường Láng Hạ, quận Đống Đa, Hà Nội<br>
-                        T: (+84) 4 3640 6627<br>
-                        E: info@mog.net<br>
-                        <br>
-                        <span style="color: rgb(228, 228, 228);font-weight: 600;">Chi nhánh HCM</span><br>
-                        A: 927/1 đường CMT8, phường 7, quận Tân Bình, Hồ Chí Minh<br>
-                        T: (+84) 8 39700380 - (+84) 8 39700377
-                    </p>
+                <div class="job_item">
+                    <div class="job_name">
+                        <p>Software Sales Staff</p>
+                    </div>
+                    <div class="job_deets">
+                        <div class="job_loc">
+                        <p><i class="fa-solid fa-location-dot"></i>Hanoi<b>Deadline:</b> 30/04/2016</p>
+                        </div>
+                    </div>
+                    <a href="#" class="btn-job">Apply</a>
                 </div>
             </div>
-        </div>
-        <div class="footer_bottom" style="border-top: 1px solid #393939;">
-            <div class="footer_bottom-wrap" style="max-height: 65px;">
-                <div class="footer_bottom-wrap-left">
-                    <a class="footer_logo" href="#"></a>
-                </div>
-                <div class="footer_bottom-wrap-right" style="max-width: 108.86px;">
-                    <button onclick="changeLan()" class="btn-langue" type="button">
-                        <div style="display: flex;">
-                            <div><img class="lan_sel" src="../images/vn.png" alt=""></div>
-                            <div style="margin-left: 6px;">Việt Nam<span class="caret"></span></div>
+            <div class="job_list">
+                <h2 class="job_list-tittle">IT & Software</h2>
+                <div class="job_item">
+                    <div class="job_name">
+                        <p>Java Devoloper</p>
+                    </div>
+                    <div class="job_deets">
+                        <div class="job_loc">
+                        <p><i class="fa-solid fa-location-dot"></i>Hanoi<b>Deadline:</b> 30/04/2016</p>
                         </div>
-                    </button>
-                    <div class="popup_langue" id="popup_langue" style="width: 145px;">
-                        <div style="display: flex;">
-                            <img style="width: 27px; margin-top: 3px;" src="../images/Eng.png" alt="">
-                            <a href="../index.html">English</a>
-                        </div>       
+                    </div>
+                    <a href="#" class="btn-job">Apply</a>
+                </div>
+                <div class="job_item">
+                    <div class="job_name">
+                        <p>Core Platform Developer</p>
+                    </div>
+                    <div class="job_deets">
+                        <div class="job_loc">
+                        <p><i class="fa-solid fa-location-dot"></i>Hanoi<b>Deadline:</b> 30/04/2016</p>
+                        </div>
+                    </div>
+                    <a href="#" class="btn-job">Apply</a>
+                </div>
+            </div>
+            <div class="job_list">
+                <h2 class="job_list-tittle">Art & Design</h2>
+                <div class="job_item">
+                    <div class="job_name">
+                        <p>UX Designer</p>
+                    </div>
+                    <div class="job_deets">
+                        <div class="job_loc">
+                        <p><i class="fa-solid fa-location-dot"></i>Hanoi<b>Deadline:</b> 30/04/2016</p>
+                        </div>
+                    </div>
+                    <a href="#" class="btn-job">Apply</a>
+                </div>
+                <div class="job_item">
+                    <div class="job_name">
+                        <p>UI Designer</p>
+                    </div>
+                    <div class="job_deets">
+                        <div class="job_loc">
+                        <p><i class="fa-solid fa-location-dot"></i>Hanoi<b>Deadline:</b> 30/04/2016</p>
+                        </div>
+                    </div>
+                    <a href="#" class="btn-job">Apply</a>
+                </div>
+            </div>
+            <div class="learmore">
+                <p>Chưa tìm thấy vị trí mà bạn mong muốn? Vui lòng liên hệ trực tiếp với chúng tôi qua địa chỉ email: <a href="#">tuyendung@mog.net.</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="footer_top">
+            <div class="footer_top-left">
+                <div class="footer_link">
+                    <div class="footer_tittle">Liên kết nhanh</div>
+                    <ul class="clearfix">
+                        <li><a href="#">Trang chủ</a></li>
+                        <li><a href="aboutus.html">Giới thiệu</a></li>
+                        <li><a href="products.html">Sản phẩm</a></li>
+                        <li><a href="news.html">Tin tức</a></li>
+                        <li><a href="resources.html">Thư viện</a></li>
+                        <li><a href="#">Chính sách bảo mật</a></li>
+                        <li><a href="contactus.html">Liên hệ</a></li>
+                        <li><a href="careers.html">Tuyển dụng</a></li>
+                        <li><a href="#">Điều khoản dịch vụ</a></li>
+                        <li><a>Mạng xã hội:</a></li>
+                        <li>
+                            <a href="https://www.facebook.com/mogvietnam">
+                                <img class="logo-fb" src="../images/icon_face.png">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer_link">
+                    <div class="footer_tittle">Nhận bản tin</div>
+                    <div class="form-group">
+                        <div class="input-email">
+                            <input type="email" class="input-text" placeholder="Enter your email address">
+                        </div>
+                        <div class="btn-email">
+                            <button type="submit" class="btn btn-sub">Nhận</button>
+                        </div>
                     </div>
                 </div>
+            </div>
+            <div class="footer_top-right">
+                <div class="footer_tittle">Liên hệ</div>
+                <p><br>
+                    <span>Trụ sở chính</span><br>
+                    A: mTower – Số 4, ngõ 151B, Yên Lãng,<br>
+                    phường Láng Hạ, quận Đống Đa, Hà Nội<br>
+                    T: (+84) 4 3640 6627<br>
+                    E: info@mog.net<br>
+                    <br>
+                    <span>Chi nhánh HCM</span><br>
+                    A: 927/1 đường CMT8, phường 7, quận Tân Bình, Hồ Chí Minh<br>
+                    T: (+84) 8 39700380 - (+84) 8 39700377
+                </p>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <div class="footer_bottom-left">
+                <a class="footer_logo" href="#"></a>
+            </div>
+            <div class="footer_bottom-right">
+                <div class="popup_langue" id="popup_langue">
+                    <div style="display: flex; width: 123px;">
+                        <img src="../images/Eng.png" alt="">
+                        <a href="../index.html">English</a>
+                    </div> 
+                </div>
+                <button onclick="changeLan()" class="btn-langue" type="button">
+                    <div class="change">
+                        <img class="lan_sel" src="../images/vn.png" alt="">
+                        Việt Nam<span class="caret"></span>
+                    </div>
+                </button>
             </div>
         </div>
     </div>
 </body>
-<script>
-    // menu
-    $(document).ready(function() {
-        $('#btn-show').click(function() {
-            $('nav').slideToggle();
-        });
-    });
-</script>
 </html>

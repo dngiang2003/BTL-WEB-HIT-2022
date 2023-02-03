@@ -9,16 +9,16 @@
     <link rel="stylesheet" href="../style/contacts.css">
     <script src="../script/main.js"></script>
     <script src="../script/contacts.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <title>Liên hệ | Trang web chính thức của MOG Việt Nam | MOG</title>
 </head>
 <body>
-    <!-- menu đầu tiên -->
+    <!-- Menu -->
     <button onclick="goToTop()" id="btn-top" title="Go to top"></button>
     <div class="banner">
         <div class="banner_nav">
             <a href="#" class="banner_nav-logo"></a>
-            <nav>
+            <nav class="nav-main">
                 <ul id="main-menu">
                     <li><a href="index.html">Trang chủ</a></li>
                     <li><a href="aboutus.html">Giới thiệu</a></li>
@@ -26,103 +26,153 @@
                     <li><a href="news.html">Tin tức</a></li>
                     <li><a href="recources.html">Thư viện</a></li>
                     <li><a href="careers.html">Tuyển dụng</a></li>
-                    <li><a href="contacts.html id="active" style="opacity: 1;"">Liên hệ</a></li>
+                    <li><a href="contacts.html" id="active" style="opacity: 1;">Liên hệ</a></li>
                 </ul>
             </nav>
-            <!-- onclick="showMenu()" -->
-            <button id="btn-show" title="show menu">Menu</button> 
+            <button onclick="showMenu()" id="btn-show" title="show menu">Menu</button> 
         </div>
         <div class="banner_text">
             <h2>Cần hỗ trợ hãy liên hệ với chúng tôi</h2>
         </div>
         <div class="colored-line"></div>
     </div>
-
-    <!-- code tiếp các mục tại đây -->
-    <div class="content"></div>
-
-    <!-- footer cuối cùng -->
-    <div class="footer">
-        <div class="footer_top">
-            <div class="row">
-                <div class="row_left">
-                    <div class="footer_link">
-                        <div class="footer_tittle">Liên kết nhanh</div>
-                        <ul class="clearfix">
-                            <li><a href="#">Trang chủ</a></li>
-                            <li><a href="aboutus.html">Giới thiệu</a></li>
-                            <li><a href="products.html">Sản phẩm</a></li>
-                            <li><a href="news.html">Tin tức</a></li>
-                            <li><a href="resources.html">Thư viện</a></li>
-                            <li><a href="#">Chính sách bảo mật</a></li>
-                            <li><a href="contactus.html">Liên hệ</a></li>
-                            <li><a href="careers.html">Tuyển dụng</a></li>
-                            <li><a href="#">Điều khoản dịch vụ</a></li>
-                            <li><a>Mạng xã hội:</a></li>
-                            <li>
-                                <a href="https://www.facebook.com/mogvietnam">
-                                    <img class="logo-fb" src="../images/icon_face.png">
-                                </a>
-                            </li>
-                        </ul>
+    
+     <!-- Quick contact -->
+     <div class="content-1">
+        <div class="content-title">
+            <div class="content-title-text">Cần hỗ trợ?</div>
+            <div class="content-title-line"></div>
+        </div>
+        <div class="content-main-1">
+            <form action="" method="" role="form">
+                <div class="form-name-email-phone">
+                    <div class="form-name">
+                        <label for="">Họ & Tên</label>
+                        <input type="text" class="form-control" placeholder="Họ & Tên">
                     </div>
-                    <div class="footer_link">
-                        <div class="footer_tittle">Nhận bản tin</div>
-                        <div class="form-group">
-                            <div class="input-email">
-                                <input type="email" class="input-text" placeholder="Nhập email của bạn">
-                            </div>
-                            <div class="btn-email">
-                                <button type="submit" class="btn btn-sub">Nhận</button>
-                            </div>
-                        </div>
+                    <div class="form-email">
+                        <label for="">Email</label>
+                        <input type="text" class="form-control" placeholder="Email">
                     </div>
+                    <div class="form-phone">
+                        <label for="">Số điện thoại</label>
+                        <input type="text" class="form-control" placeholder="Số điện thoại">
+                    </div>
+                </div>  
+                <div class="form-message">
+                    <label for="">Nội dung</label>
+                    <textarea class="form-control" rows="4"  placeholder="Nội dung"></textarea>
                 </div>
-                <div class="row_right">
-                    <div class="footer_tittle">Liên hệ</div>
-                    <p style="color: rgba(255, 255, 255, 0.432)"><br>
-                        <span style="color: rgb(228, 228, 228);font-weight: 600;">Trụ sở chính</span><br>
-                        A: mTower – Số 4, Ngõ 151B, Yên Lãng,
-                        phường Láng Hạ, quận Đống Đa, Hà Nội<br>
-                        T: (+84) 4 3640 6627<br>
-                        E: info@mog.net<br>
-                        <br>
-                        <span style="color: rgb(228, 228, 228);font-weight: 600;">Chi nhánh HCM</span><br>
-                        A: 927/1 đường CMT8, phường 7, quận Tân Bình, Hồ Chí Minh<br>
-                        T: (+84) 8 39700380 - (+84) 8 39700377
-                    </p>
+                <div class="form-btn">
+                    <button type="submit" class="btn_apply">Gửi</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="block_wrap"></div>
+    <div class="content-2">
+        <div class="content-title">
+            <div class="content-title-text">Địa chỉ liên hệ</div>
+            <div class="content-title-line"></div>
+        </div>
+        <div class="content-main-2">
+            <div class="content-main-2-map">
+                <div class="google-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2090.3069545341154!2d105.81658129087872!3d21.01253272505542!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab7d2c5873f7%3A0xe0a04921e83697fb!2sMOG!5e0!3m2!1sen!2sus!4v1674219857224!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="map-content">
+                    <h3><i class="fa-solid fa-location-dot"></i>Trụ sở chính</h3>
+                    <p>Địa chỉ: mTower – số 4, ngõ 151B, Yên Lãng, Đống Đa, Hà Nội</p>
+                    <p>Điện thoại: (+84) – 4 – 3640 6627</p> 
+                    <p>Email: info@mog.net</p> 
+                    <p>Website: https://mog.net</p>    
                 </div>
             </div>
-        </div>
-        <div class="footer_bottom" style="border-top: 1px solid #393939;">
-            <div class="footer_bottom-wrap" style="max-height: 65px;">
-                <div class="footer_bottom-wrap-left">
-                    <a class="footer_logo" href="#"></a>
+            <div class="content-main-2-map">
+                <div class="google-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d571.4946044551311!2d106.65899863656396!3d10.789697423228818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ecc9b9c03d5%3A0x69b12f289edb9d8f!2zOTI3LzEgxJAuIEPDoWNoIE3huqFuZyBUaMOhbmcgOCwgUGjGsOG7nW5nIDcsIFTDom4gQsOsbmgsIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaCwgVmlldG5hbQ!5e0!3m2!1sen!2sus!4v1674221562032!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-                <div class="footer_bottom-wrap-right" style="max-width: 108.86px;">
-                    <button onclick="changeLan()" class="btn-langue" type="button">
-                        <div style="display: flex;">
-                            <div><img class="lan_sel" src="../images/vn.png" alt=""></div>
-                            <div style="margin-left: 6px;">Việt Nam<span class="caret"></span></div>
-                        </div>
-                    </button>
-                    <div class="popup_langue" id="popup_langue" style="width: 145px;">
-                        <div style="display: flex;">
-                            <img style="width: 27px; margin-top: 3px;" src="../images/Eng.png" alt="">
-                            <a href="../index.html">English</a>
-                        </div>       
-                    </div>
+                <div class="map-content">
+                    <h3><i class="fa-solid fa-location-dot"></i>Văn phòng HCM</h3>
+                    <p>Đia chỉ: 927/1 Đường Cách Mạng Tháng 8, Phường 7, Quận Tân Bình, HCM</p>
+                    <p>Điện thoại: (+84) 8 39700380 - (+84) 8 39700377</p> 
+                    <p>Email: info@mog.net</p> 
+                    <p>Website: https://mog.net</p>    
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="footer_top">
+            <div class="footer_top-left">
+                <div class="footer_link">
+                    <div class="footer_tittle">Liên kết nhanh</div>
+                    <ul class="clearfix">
+                        <li><a href="#">Trang chủ</a></li>
+                        <li><a href="aboutus.html">Giới thiệu</a></li>
+                        <li><a href="products.html">Sản phẩm</a></li>
+                        <li><a href="news.html">Tin tức</a></li>
+                        <li><a href="resources.html">Thư viện</a></li>
+                        <li><a href="#">Chính sách bảo mật</a></li>
+                        <li><a href="contactus.html">Liên hệ</a></li>
+                        <li><a href="careers.html">Tuyển dụng</a></li>
+                        <li><a href="#">Điều khoản dịch vụ</a></li>
+                        <li><a>Mạng xã hội:</a></li>
+                        <li>
+                            <a href="https://www.facebook.com/mogvietnam">
+                                <img class="logo-fb" src="../images/icon_face.png">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer_link">
+                    <div class="footer_tittle">Nhận bản tin</div>
+                    <div class="form-group">
+                        <div class="input-email">
+                            <input type="email" class="input-text" placeholder="Enter your email address">
+                        </div>
+                        <div class="btn-email">
+                            <button type="submit" class="btn btn-sub">Nhận</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_top-right">
+                <div class="footer_tittle">Liên hệ</div>
+                <p><br>
+                    <span>Trụ sở chính</span><br>
+                    A: mTower – Số 4, ngõ 151B, Yên Lãng,<br>
+                    phường Láng Hạ, quận Đống Đa, Hà Nội<br>
+                    T: (+84) 4 3640 6627<br>
+                    E: info@mog.net<br>
+                    <br>
+                    <span>Chi nhánh HCM</span><br>
+                    A: 927/1 đường CMT8, phường 7, quận Tân Bình, Hồ Chí Minh<br>
+                    T: (+84) 8 39700380 - (+84) 8 39700377
+                </p>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <div class="footer_bottom-left">
+                <a class="footer_logo" href="#"></a>
+            </div>
+            <div class="footer_bottom-right">
+                <div class="popup_langue" id="popup_langue">
+                    <div style="display: flex; width: 123px;">
+                        <img src="../images/Eng.png" alt="">
+                        <a href="../index.html">English</a>
+                    </div> 
+                </div>
+                <button onclick="changeLan()" class="btn-langue" type="button">
+                    <div class="change">
+                        <img class="lan_sel" src="../images/vn.png" alt="">
+                        Việt Nam<span class="caret"></span>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </div>
 </body>
-<script>
-    // menu
-    $(document).ready(function() {
-        $('#btn-show').click(function() {
-            $('nav').slideToggle();
-        });
-    });
-</script>
 </html>

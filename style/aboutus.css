@@ -11,7 +11,6 @@ a {
     color: #4a4a4a;
 }
 
-
 .content-menu ul li a {
     font-size: 15px;
     padding: 20px 35px;
@@ -20,6 +19,7 @@ a {
     padding-left: 0;
     font-weight: 600;
 }
+
 .content-menu ul li a:hover {
     color: #236fb6;
 }
@@ -27,6 +27,7 @@ a {
 .content-menu .nav .page_menu {
     display: none;
 }
+
 .content-menu .nav .page_menu button {
     position: absolute;
     right: 20px;
@@ -82,6 +83,7 @@ a {
 .content-2, .content-3, .content-4 {
     padding-bottom: 65px;
 }
+
 .content-main-2 p {
     width: 97%;
     font-weight: 400;
@@ -102,13 +104,12 @@ a {
     margin-left: 20px;
 }
 
-
-
 .box-3-item-image img {
     width: 25px;
     margin-top: 3px;
     border-radius: 3px;
 }
+
 .box-3-item-content {
     margin-left: 15px;
 }
@@ -122,6 +123,7 @@ a {
     opacity: 0.8;
     padding: 7px 0px;
 }
+
 .box-3-item-content h5 a {
     font-size: 20px;
     line-height: 23px;
@@ -137,6 +139,7 @@ a {
 .slick-initialized .slick-slide {
     margin: 0 10px;
 }
+
 .slick-dots {
     position: absolute;
     bottom: 20;
@@ -147,6 +150,7 @@ a {
     justify-content: center;
     gap: 0 20px;
 }
+
 .slick-dots button {
     font-size: 0;
     width: 12px;
@@ -157,6 +161,7 @@ a {
     outline: none;
     transition: all 0.2s linear;
 }
+
 .slick-dots .slick-active button {
     background-color: #838383;
 }
@@ -168,6 +173,7 @@ a {
 article.timeline section.year {
     position: relative;
 }
+
 article.timeline h3 {
     position: absolute;
     color: #ed174b;
@@ -176,6 +182,7 @@ article.timeline h3 {
     font-weight: 600;
     line-height: 25px;
 }
+
 article.timeline section.year section h4 {
     bottom: 0;
     font-size: 16px;
@@ -199,10 +206,6 @@ article.timeline section.year section ul:last-child {
     margin-bottom: 0;
 }
 
-ul {
-    list-style: none;
-}
-
 article.timeline div:after {
     content: '';
     width: 2px;
@@ -213,6 +216,7 @@ article.timeline div:after {
     z-index: 1;
     background: #e6ebee;
 }
+
 article.timeline section.year section ul:first-of-type:after {
     content: '';
     width: 10px;

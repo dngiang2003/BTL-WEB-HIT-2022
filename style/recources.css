@@ -1,6 +1,7 @@
 body {
     display: flex;
 }
+
 .banner {
     background-image: url('../images/top_image_7.jpg');
 }
@@ -41,13 +42,16 @@ h1 {
     width: 100%;
     font-size: 14.5px;
 }
+
 .photo-main span {
     margin-bottom: 30px;
 }
+
 span {
     opacity: .8;
     margin-bottom: 50px;
 }
+
 .photo-child {
     margin-top: 30px;
     width: 100%;
@@ -55,10 +59,12 @@ span {
     flex-wrap: wrap;
     margin: auto;
 }
+
 .photo-child-1 {
     width: 22%;
     margin: 20px 15px;
 }
+
 .photo-child-1 img {
     width: 100%;
     border-radius: 5px;
@@ -80,6 +86,7 @@ span {
 .button:hover {
     background-color: #c7bebe;
 }
+
 .button a {
     text-decoration: none;
     color: #4a4a4a;
@@ -218,31 +225,38 @@ span {
     right: 20%;
     font-size: 30px;;
 }
+
 .control {
     font-size: 30px;
     color: rgb(255, 255, 255, 0.8);
     position: absolute;
 }
+
 .control.left {
     left: 15px;
 }
+
 .control.right {
     right: 15px;
 }
+
 .gallery_inner {
     width: 60%;
     height: 60%;
     justify-content: center;
     display: flex;
 }
+
 .show {
     opacity: 1;
     pointer-events: auto;
     transform: scale(1);
 }
+
 .hide {
     display: none;
 }
+
 @media only screen and (min-width: 200px)
 {
     .close {
@@ -265,6 +279,7 @@ span {
         height: 800px;
     }
 }
+
 @media only screen and (max-width: 1919px) and (min-width: 1024px)
 {
     .content {

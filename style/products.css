@@ -80,6 +80,7 @@ a {
 .content-main {
     width: 58.333%;
 }
+
 .content-icon-list {
     display: flex;
 }
@@ -90,6 +91,7 @@ p.content-text {
     width: 100%;
     margin-bottom: 15px;
 }
+
 .content-icon-list li {
     float: left;
     margin-right: 15px;
@@ -118,6 +120,7 @@ p.content-text {
 .content-big {
     width: 100%;
 }
+
 .btn-job {
     background: #f0eded;
     border: 1px solid #e5e5e5;
@@ -127,15 +130,19 @@ p.content-text {
     display: inline-block;
     color: #4a4a4a;
 }
+
 .btn-job:hover {
     background: #EFEFEF;
 }
+
 .box-image .item img {
     width: 120px;
 }
+
 .content-7 {
     height: 300px;
 }
+
 .content-7-slider {
     margin-top: 30px;
 }
@@ -154,9 +161,11 @@ p.content-text {
     color: #a2a2a2;
     transition: all 0.2s linear;
 }
+
 .slick-arrow:hover {
     color: rgb(89, 89, 89);
 }
+
 .slick-prev {
     left: 48%;
 }
@@ -164,6 +173,7 @@ p.content-text {
 .content-menu .nav .page_menu {
     display: none;
 }
+
 .content-menu .nav .page_menu button {
     position: absolute;
     right: 20px;
@@ -173,7 +183,6 @@ p.content-text {
     border: none;
     cursor: pointer;
 }
-
 
 @media (max-width: 1266px) {
     .content-menu, .content-2, .content-3,
@@ -185,6 +194,7 @@ p.content-text {
         width: 75%;
     }
 }
+
 @media (max-width: 1190px) {
     .content-menu, .content-2, .content-3,
     .content-4, .content-5, .content-6,
@@ -217,8 +227,6 @@ p.content-text {
         width: 85%;
     }
 }
-
-
 
 @media (max-width: 768px) {
     .content-2, 
@@ -284,12 +292,14 @@ p.content-text {
         display: block;
     }
 }
+
 @media (max-width: 670px) {
     .content-icon-list li a img {
         width: 60px;
         height: 60px;
     }
 }
+
 @media (max-width: 480px) {
     .content-icon-list li a img {
         width: 50px;

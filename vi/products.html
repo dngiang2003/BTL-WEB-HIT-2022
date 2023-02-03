@@ -7,18 +7,18 @@
     <link rel="icon" href="../images/icon.png">
     <link rel="stylesheet" href="../style/menu-footer.css">
     <link rel="stylesheet" href="../style/products.css">
-    <script src="../script/main.js"></script>
-    <script src="../script/products.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <title>Sản phẩm  | Trang web chính thức của MOG Việt Nam | MOG</title>
 </head>
 <body>
-    <!-- menu đầu tiên -->
+    <!-- Menu -->
     <button onclick="goToTop()" id="btn-top" title="Go to top"></button>
     <div class="banner">
         <div class="banner_nav">
             <a href="#" class="banner_nav-logo"></a>
-            <nav>
+            <nav class="nav-main">
                 <ul id="main-menu">
                     <li><a href="index.html">Trang chủ</a></li>
                     <li><a href="aboutus.html">Giới thiệu</a></li>
@@ -29,100 +29,286 @@
                     <li><a href="contacts.html">Liên hệ</a></li>
                 </ul>
             </nav>
-            <!-- onclick="showMenu()" -->
-            <button id="btn-show" title="show menu">Menu</button> 
+            <button onclick="showMenu()" id="btn-show" title="show menu">Menu</button> 
         </div>
         <div class="banner_text">
             <h2>Với các sản phẩm của MOG, di động của bạn có thể phá vỡ mọi giới hạn</h2>
         </div>
         <div class="colored-line"></div>
     </div>
+    
+    <!-- Nav Menu Con -->
+    <div class="content-menu">
+        <ul class="nav">
+            <li class="page_menu" style="position: relative;">
+                <a style="color: #236fb6;">Menu</a>
+                <button onclick="showMenuC()"><ion-icon name="chevron-down-outline"></ion-icon></button>
+            </li>
+            <li class="page_scroll"><a href="#product-ads">Quảng cáo trực tuyến</a></li>
+            <li class="page_scroll"><a href="#product-pay">Thanh toán điện tử & ví điện tử</a></li>
+            <li class="page_scroll"><a href="#product-mobile">Tiện ích di động</a></li>
+            <li class="page_scroll"><a href="#product-retail">Kết nối bán lẻ</a></li>
+            <li class="page_scroll"><a href="#product-game">Giải trí Game</a></li>
+        </ul>
+    </div>
+    
+    <!-- Online Advertising -->
+    <div class="block_wrap"></div>
+    <div class="content-2" id="product-ads">
+        <div class="content-img">
+            <a href="#">
+                <img src="../images/img-online_ads.png" alt="">
+            </a>
+        </div>
+        <div class="content-main">
+            <a href="#">
+                <h3 class="content-title">Quảng cáo trực tuyến</h3>
+                <p class="content-text">Sở hữu nhiều nền tảng quảng cáo thông minh, MOG cung cấp các giải pháp marketing hiệu quả giúp nhà quảng cáo tiếp cận hàng triệu người dùng, xây dựng thương hiệu và tăng doanh thu.</p>
+            </a>
+            <ul class="content-icon-list add">
+                <li>
+                    <a href="products-detail-accesstrade.html"><img src="../images/logo_accesstrade.png" alt="">
+                        <p>Accesstrade</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="products-detail-admatic.html"><img src="../images/logo_admatic.png" alt="">
+                        <p>Admatic</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="products-detail-mwork.html"><img src="../images/logo-mwork.png" alt="">
+                        <p>mWork</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
 
-    <!-- code tiếp các mục tại đây -->
-    <div class="content"></div>
-
-    <!-- footer cuối cùng -->
-    <div class="footer">
-        <div class="footer_top">
-            <div class="row">
-                <div class="row_left">
-                    <div class="footer_link">
-                        <div class="footer_tittle">Liên kết nhanh</div>
-                        <ul class="clearfix">
-                            <li><a href="#">Trang chủ</a></li>
-                            <li><a href="aboutus.html">Giới thiệu</a></li>
-                            <li><a href="products.html">Sản phẩm</a></li>
-                            <li><a href="news.html">Tin tức</a></li>
-                            <li><a href="resources.html">Thư viện</a></li>
-                            <li><a href="#">Chính sách bảo mật</a></li>
-                            <li><a href="contactus.html">Liên hệ</a></li>
-                            <li><a href="careers.html">Tuyển dụng</a></li>
-                            <li><a href="#">Điều khoản dịch vụ</a></li>
-                            <li><a>Mạng xã hội:</a></li>
-                            <li>
-                                <a href="https://www.facebook.com/mogvietnam">
-                                    <img class="logo-fb" src="../images/icon_face.png">
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="footer_link">
-                        <div class="footer_tittle">Nhận bản tin</div>
-                        <div class="form-group">
-                            <div class="input-email">
-                                <input type="email" class="input-text" placeholder="Nhập email của bạn">
-                            </div>
-                            <div class="btn-email">
-                                <button type="submit" class="btn btn-sub">Nhận</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row_right">
-                    <div class="footer_tittle">Liên hệ</div>
-                    <p style="color: rgba(255, 255, 255, 0.432)"><br>
-                        <span style="color: rgb(228, 228, 228);font-weight: 600;">Trụ sở chính</span><br>
-                        A: mTower – Số 4, Ngõ 151B, Yên Lãng,
-                        phường Láng Hạ, quận Đống Đa, Hà Nội<br>
-                        T: (+84) 4 3640 6627<br>
-                        E: info@mog.net<br>
-                        <br>
-                        <span style="color: rgb(228, 228, 228);font-weight: 600;">Chi nhánh HCM</span><br>
-                        A: 927/1 đường CMT8, phường 7, quận Tân Bình, Hồ Chí Minh<br>
-                        T: (+84) 8 39700380 - (+84) 8 39700377
-                    </p>
-                </div>
+    <!-- e-Payment & e-Wallet -->
+    <div class="content-big" style="background-color: #39b54a;">
+        <div class="content-3" id="product-pay">
+            <div class="content-main">
+                <a href="#">
+                    <h3 class="content-title" style="color: #ffffff;">Thanh toán điện tử & ví điện tử</h3>
+                    <p class="content-text" style="color: #ffffff;">Với sự hiện diện tại nhiều quốc gia, chúng tôi mang lại một giải pháp thanh toán toàn cầu tới các doanh nghiệp và cá nhân toàn Đông Nam Á.</p>
+                </a>
+                <ul class="content-icon-list">
+                    <li>
+                        <a href="products-detail-yolo.html"><img src="../images/logo_1pay.png" alt="">
+                            <p class="text-white" style="color: #ffffff;">1Pay</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="content-img">
+                <a href="#">
+                    <img src="../images/img-e_Payment.png" alt="">
+                </a>
             </div>
         </div>
-        <div class="footer_bottom" style="border-top: 1px solid #393939;">
-            <div class="footer_bottom-wrap" style="max-height: 65px;">
-                <div class="footer_bottom-wrap-left">
-                    <a class="footer_logo" href="#"></a>
-                </div>
-                <div class="footer_bottom-wrap-right" style="max-width: 108.86px;">
-                    <button onclick="changeLan()" class="btn-langue" type="button">
-                        <div style="display: flex;">
-                            <div><img class="lan_sel" src="../images/vn.png" alt=""></div>
-                            <div style="margin-left: 6px;">Việt Nam<span class="caret"></span></div>
-                        </div>
-                    </button>
-                    <div class="popup_langue" id="popup_langue" style="width: 145px;">
-                        <div style="display: flex;">
-                            <img style="width: 27px; margin-top: 3px;" src="../images/Eng.png" alt="">
-                            <a href="../index.html">English</a>
-                        </div>       
-                    </div>
+    </div>
+
+    <!-- Mobile Utilities -->
+    <div class="content-big" style="background-color: #552fbd;">
+        <div class="content-4" id="product-mobile">
+            <div class="content-img">
+                <a href="#">
+                    <img src="../images/img-mobile_ultilities.png" alt="">
+                </a>
+            </div>
+            <div class="content-main">
+                <a href="#">
+                    <h3 class="content-title" style="color: #ffffff;">Tiện ích di động</h3>
+                    <p class="content-text" style="color: #ffffff;">Chúng tôi phát triển những tiện ích thông minh và có tính địa phương hóa cao để mang lại trải nghiệm hoàn toàn khác biệt trên di động cho người dùng.</p>
+                </a>
+                <ul class="content-icon-list">
+                    <li>
+                        <a href="products-detail-yolo.html"><img src="../images/logo_yolo.png" alt="">
+                            <p class="text-white" style="color: #ffffff;">YOLO Family</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Connected Retail -->
+    <div class="content-big" style="background-color: #093c53;">
+        <div class="content-5" id="product-retail">
+            <div class="content-main">
+                <a href="#">
+                    <h3 class="content-title" style="color: #ffffff;">Kết nối bán lẻ</h3>
+                    <p class="content-text" style="color: #ffffff;">Chúng tôi tạo ra những giải pháp đầy sáng tạo và đột phá giúp các cửa hàng vừa và nhỏ kết nối tới khách hàng với chi phí rẻ nhất, hiệu quả cao nhất, cùng trải nghiệm mua hàng thú vị nhất.</p>
+                </a>
+                <ul class="content-icon-list">
+                    <li>
+                        <a href="products-detail-yolo.html"><img src="../images/logo_posify.png" alt="">
+                            <p class="text-white" style="color: #ffffff;">Posify</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="products-detail-yolo.html"><img src="../images/logo_gimi.png" alt="">
+                            <p class="text-white" style="color: #ffffff;">Gimi</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="content-img">
+                <a href="#">
+                    <img src="../images/img-connected_retails.png" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Game Entertainment -->
+    <div class="content-big" style="background-color: #f8f8f8;">
+        <div class="content-6" id="product-game">
+            <div class="content-img">
+                <a href="#">
+                    <img src="../images/img-game_entertainment.png" alt="">
+                </a>
+            </div>
+            <div class="content-main">
+                <a href="#">
+                    <h3 class="content-title">Giải trí Game</h3>
+                    <p class="content-text">Là một trong những công ty game hàng đầu tại Việt Nam, chúng tôi đã xây dựng rất nhiều game trên di động và phát hành tới hàng chục triệu người chơi trên toàn thế giới.</p>
+                </a>
+                <div class=" m-t-5">
+                    <a href="products-detail-game-entertainment.html" class="btn btn-job bk-tran">Chi tiết</a>
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- Our Precious Clients -->
+    <div class="content-7">
+        <div class="content-title">
+            <div class="content-title-text" style="text-align: center;">Khách hàng của chúng tôi</div>
+            <div class="content-title-line"></div>
+        </div>
+        <div class="content-7-slider">
+            <div class="box-image">
+                <div class="item"><img src="../images/cheetah.png" alt=""></div>
+            </div>
+            <div class="box-image">
+                <div class="item"><img src="../images/appsflyer-logo-241-150.png" alt=""></div>
+            </div>
+            <div class="box-image">
+                <div class="item"><img src="../images/efun.png" alt=""></div>
+            </div>
+            <div class="box-image">
+                <div class="item"><img src="../images/logo_viettel.png" alt=""></div>
+            </div>
+            <div class="box-image">
+                <div class="item"><img src="../images/gumi.png" alt=""></div>
+            </div>
+            <div class="box-image">
+                <div class="item"><img src="../images/google_logo.jpg" alt=""></div>
+            </div>
+            <div class="box-image">
+                <div class="item"><img src="../images/logo_FPT.png" alt=""></div>
+            </div>
+            <div class="box-image">
+                <div class="item"><img src="../images/vng.png" alt=""></div>
+            </div>
+            <div class="box-image">
+                <div class="item"><img src="../images/logo_vinaphone.png" alt=""></div>
+            </div>
+            <div class="box-image">
+                <div class="item"><img src="../images/logo_face.jpg" alt=""></div>
+            </div>
+            <div class="box-image">
+                <div class="item"><img src="../images/logo_ME.png" alt=""></div>
+            </div>
+            <div class="box-image">
+                <div class="item"><img src="../images/logo_mobifone.png" alt=""></div>
+            </div>
+            <div class="box-image">
+                <div class="item"><img src="../images/logo_movistar.png" alt=""></div>
+            </div>
+            <div class="box-image">
+                <div class="item"><img src="../images/logo_VCCorp.png" alt=""></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="footer_top">
+            <div class="footer_top-left">
+                <div class="footer_link">
+                    <div class="footer_tittle">Liên kết nhanh</div>
+                    <ul class="clearfix">
+                        <li><a href="#">Trang chủ</a></li>
+                        <li><a href="aboutus.html">Giới thiệu</a></li>
+                        <li><a href="products.html">Sản phẩm</a></li>
+                        <li><a href="news.html">Tin tức</a></li>
+                        <li><a href="resources.html">Thư viện</a></li>
+                        <li><a href="#">Chính sách bảo mật</a></li>
+                        <li><a href="contactus.html">Liên hệ</a></li>
+                        <li><a href="careers.html">Tuyển dụng</a></li>
+                        <li><a href="#">Điều khoản dịch vụ</a></li>
+                        <li><a>Mạng xã hội:</a></li>
+                        <li>
+                            <a href="https://www.facebook.com/mogvietnam">
+                                <img class="logo-fb" src="../images/icon_face.png">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer_link">
+                    <div class="footer_tittle">Nhận bản tin</div>
+                    <div class="form-group">
+                        <div class="input-email">
+                            <input type="email" class="input-text" placeholder="Enter your email address">
+                        </div>
+                        <div class="btn-email">
+                            <button type="submit" class="btn btn-sub">Nhận</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_top-right">
+                <div class="footer_tittle">Liên hệ</div>
+                <p><br>
+                    <span>Trụ sở chính</span><br>
+                    A: mTower – Số 4, ngõ 151B, Yên Lãng,<br>
+                    phường Láng Hạ, quận Đống Đa, Hà Nội<br>
+                    T: (+84) 4 3640 6627<br>
+                    E: info@mog.net<br>
+                    <br>
+                    <span>Chi nhánh HCM</span><br>
+                    A: 927/1 đường CMT8, phường 7, quận Tân Bình, Hồ Chí Minh<br>
+                    T: (+84) 8 39700380 - (+84) 8 39700377
+                </p>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <div class="footer_bottom-left">
+                <a class="footer_logo" href="#"></a>
+            </div>
+            <div class="footer_bottom-right">
+                <div class="popup_langue" id="popup_langue">
+                    <div style="display: flex; width: 123px;">
+                        <img src="../images/Eng.png" alt="">
+                        <a href="../index.html">English</a>
+                    </div> 
+                </div>
+                <button onclick="changeLan()" class="btn-langue" type="button">
+                    <div class="change">
+                        <img class="lan_sel" src="../images/vn.png" alt="">
+                        Việt Nam<span class="caret"></span>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="../script/main.js"></script>
+    <script src="../script/products.js"></script>
 </body>
-<script>
-    // menu
-    $(document).ready(function() {
-        $('#btn-show').click(function() {
-            $('nav').slideToggle();
-        });
-    });
-</script>
 </html>

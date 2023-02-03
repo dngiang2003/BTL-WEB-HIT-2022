@@ -7,6 +7,7 @@ function changeLan() {
         document.getElementById("popup_langue").style.display = "block";
         check = true;
     }
+    // dùng toggle tối ưu hơn nè
 }
 
 function showMenu() {
