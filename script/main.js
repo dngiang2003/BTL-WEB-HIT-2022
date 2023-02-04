@@ -34,3 +34,9 @@ window.onscroll = function() {
     document.getElementById("btn-top").style.display = "none";
     }
 };
+
+function showMenuC() {
+    var x = document.getElementsByClassName('page_scroll');
+    for (let i = 0; i < x.length; i++)
+      x[i].classList.toggle('show');
+}

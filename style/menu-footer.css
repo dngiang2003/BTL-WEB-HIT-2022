@@ -319,6 +319,17 @@ button .change img {
     background-color: rgba(0, 0, 0, 0);
 }
 
+.banner_nav.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    padding-bottom: 2rem;
+    z-index: 1000;
+    border-bottom: 1px solid #cacaca;
+}
+
 .banner_nav.fixed .banner_nav-logo {
     background-position: 0px -48px;
 }

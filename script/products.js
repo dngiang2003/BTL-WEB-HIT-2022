@@ -38,9 +38,3 @@ $(document).ready(function () {
       autoplaySpeed: 1500,
     });
   });
-
-function showMenuC() {
-  var x = document.getElementsByClassName('page_scroll');
-  for (let i = 0; i < x.length; i++)
-    x[i].classList.toggle('show');
-}
