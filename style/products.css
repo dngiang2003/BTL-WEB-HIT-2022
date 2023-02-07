@@ -148,9 +148,9 @@ p.content-text {
 }
 
 .slick-arrow {
-    width: 20px;
-    height: 20px;
-    font-size: 18px;
+    width: 24px;
+    height: 24px;
+    font-size: 20px;
     border: none;
     position: absolute;
     bottom: 0;
@@ -184,40 +184,29 @@ p.content-text {
     cursor: pointer;
 }
 
-@media (max-width: 1266px) {
+@media (min-width: 1200px) and (max-width: 1366px) {
     .content-menu, .content-2, .content-3,
     .content-4, .content-5, .content-6,
     .content-7 {
-        width: 1000px;
+        width: 1100px;
     }
     .content-img img {
         width: 75%;
     }
 }
 
-@media (max-width: 1190px) {
+@media (min-width: 993px) and (max-width: 1201px) {
     .content-menu, .content-2, .content-3,
     .content-4, .content-5, .content-6,
     .content-7 {
-        width: 900px;
+        width: 920px;
     }
     .content-img img {
         width: 75%;
     }
 }
 
-@media (min-width: 993px) and (max-width: 1024px) {
-    .content-menu, .content-2, .content-3,
-    .content-4, .content-5, .content-6,
-    .content-7 {
-        width: 880px;
-    }
-    .content-img img {
-        width: 75%;
-    }
-}
-
-@media (max-width: 992px) {
+@media (min-width: 769px) and (max-width: 994px) {
     .content-menu, .content-2, .content-3,
     .content-4, .content-5, .content-6,
     .content-7 {
