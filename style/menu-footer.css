@@ -12,6 +12,23 @@ html {
     scroll-padding-top: 70px;
 }
 
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #d8d8d8;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(171, 171, 171);
+    border-radius: 5px;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(117, 117, 117);
+}
+
 a {
     text-decoration: none;
 }
