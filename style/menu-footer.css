@@ -391,6 +391,9 @@ button .change img {
 }
 
 @media (max-width: 768px) {
+    .banner {
+        height: 300px;
+    }
     .footer_top, .footer_bottom {
         width: 100%;
     }
