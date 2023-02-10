@@ -347,7 +347,7 @@ button .change img {
     right: 0;
     background-color: #fff;
     padding-bottom: 2rem;
-    z-index: 1000;
+    z-index: 998;
     border-bottom: 1px solid #cacaca;
 }
 
@@ -418,7 +418,7 @@ button .change img {
         top: 68px;
         left: 0;
         background-color: white;
-        z-index: 1000;
+        z-index: 998;
     }
     #btn-show {
         display: block;
