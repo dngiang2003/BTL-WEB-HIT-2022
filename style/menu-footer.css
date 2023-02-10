@@ -266,6 +266,10 @@ button .change img {
     opacity: .4;
 }
 
+.btn-sub, .btn-langue {
+    cursor: pointer;
+}
+
 .btn-langue {
     background-color: #222222;
     border: none;
