@@ -101,9 +101,6 @@ nav #main-menu a {
     height: 5px;
     width: 100%;
     background: #000;
-    background: -webkit-linear-gradient(to right, #00386c, #00386c 33%, #ed174b 33%, #ed174b 66%, #f99d1c 66%);
-    background: -o-linear-gradient(to right, #00386c, #00386c 33%, #ed174b 33%, #ed174b 66%, #f99d1c 66%);
-    background: -moz-linear-gradient(to right, #00386c, #00386c 33%, #ed174b 33%, #ed174b 66%, #f99d1c 66%);
     background: linear-gradient(to right, #00386c, #00386c 33%, #ed174b 33%, #ed174b 66%, #f99d1c 66%);
     bottom: 0;
 }
